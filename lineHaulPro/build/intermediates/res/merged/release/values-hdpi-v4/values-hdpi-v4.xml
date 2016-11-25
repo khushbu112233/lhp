@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cachedjob_margin_left_btndeleteall">12dp</dimen>
+    <dimen name="cachedjob_margin_left_btnretransmit">12dp</dimen>
+    <dimen name="cachedjob_margin_left_texview">20dp</dimen>
+    <dimen name="cachedjob_margin_right_btndeleteall">12dp</dimen>
+    <dimen name="cachedjob_margin_right_btnretransmit">12dp</dimen>
+    <dimen name="cachedjob_margin_right_textview">12dp</dimen>
+    <dimen name="cachedjob_margin_textview_padding">8dp</dimen>
+    <dimen name="cachedjob_margin_top_btndeleteall">8dp</dimen>
+    <dimen name="changepwd_margin_left">20dp</dimen>
+    <dimen name="changepwdimg_margin_top">15dp</dimen>
+    <dimen name="checkout_margin_left">115dp</dimen>
+    <dimen name="checkout_margin_left_btn">50dp</dimen>
+    <dimen name="checkout_margin_left_edittext">160dp</dimen>
+    <dimen name="dashboard_icon_bg_padding">10dp</dimen>
+    <dimen name="dashboard_text_size">11sp</dimen>
+    <dimen name="db_txt_size">10sp</dimen>
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="login_margin_left">30dp</dimen>
+    <dimen name="login_margin_top">5dp</dimen>
+    <dimen name="login_margin_top3">2dp</dimen>
+    <dimen name="login_margin_top4">25dp</dimen>
+    <dimen name="login_margin_topdb">50dp</dimen>
+    <dimen name="login_txt_padding">3dp</dimen>
+    <dimen name="table_text_padding">5dp</dimen>
+    <item name="ems" type="integer">9</item>
+    <item name="ems_small" type="integer">7</item>
+    <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
+          <item name="barLength">18.66dp</item>
+          <item name="gapBetweenBars">3.33dp</item>
+          <item name="drawableSize">24dp</item>
+     </style>
+</resources>

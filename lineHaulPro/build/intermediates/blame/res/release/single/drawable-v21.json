@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

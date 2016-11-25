@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/driver_detail"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/title_text_size" />
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="2dp" -->
+    <!-- android:paddingLeft="8dp" -->
+    <!-- android:text="@string/scroll_bottom" -->
+    <!-- android:textColor="@android:color/black" /> -->
+
+    <View
+        style="@style/Full_View_Line"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txtDriverNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"
+        android:text="Driver detail not found"
+        android:visibility="gone"
+        android:textColor="@android:color/black" />
+
+    <ListView
+        android:id="@+id/lst"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" />
+
+</LinearLayout>

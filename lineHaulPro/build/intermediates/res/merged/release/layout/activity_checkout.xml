@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/changepwdimg_margin_top"
+        android:contentDescription="@dimen/login_margin_left"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/change_pwd_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/changepwdimg_margin_top"
+        android:gravity="center"
+        android:text="@string/checkout_textview_title"
+        android:textColor="#287AA9"
+        android:textSize="@dimen/checkout_textview_size" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_margin_left"
+        android:layout_marginRight="@dimen/login_margin_left"
+        android:layout_marginTop="@dimen/checkout_margin_top_relativelayout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/checkout_textview_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkout_margin_left"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edtvehiclenamecheckout"
+                style="@style/multiscaninner_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_margin_left"
+        android:layout_marginRight="@dimen/login_margin_left"
+        android:layout_marginTop="@dimen/checkout_margin_top_relativelayout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/checkout_textview_miles" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkout_margin_left"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edtendmilescheckout"
+                style="@style/multiscaninner_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/login_margin_left"
+        android:layout_marginRight="@dimen/login_margin_left"
+        android:layout_marginTop="@dimen/changepwd_margin_left"
+        android:background="@drawable/btn_login"
+        android:text="@string/checkout_textview_btn"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</LinearLayout>

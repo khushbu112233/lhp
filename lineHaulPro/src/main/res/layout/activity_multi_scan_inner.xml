@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnLock"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/multiscan_scrll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgSingature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/changepwdimg_margin_top"
+                    android:background="#CCCCCC"
+                    android:contentDescription="@dimen/login_margin_left"
+                    android:padding="10dp"
+                    android:src="@drawable/sign_pic" />
+
+                <TextView
+                    android:id="@+id/multisacn_txtSignature"
+                    style="@style/multiscaninner_textview_style"
+                    android:text="@string/textview_multi_scan_inner_signature" />
+
+                <EditText
+                    android:id="@+id/multiscan_editSignature"
+                    style="@style/multiscaninner_edittext_style"
+                    android:layout_marginLeft="@dimen/table_text_padding"
+                    android:layout_marginRight="@dimen/table_text_padding" />
+
+                <!-- company id -->
+
+                <TextView
+                    style="@style/multiscaninner_textview_style"
+                    android:gravity="left"
+                    android:text="@string/textview_multi_scan_inner_companyid"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/multiscan_spinnerCompanyid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/table_text_padding"
+                    android:layout_marginRight="@dimen/table_text_padding"
+                    android:drawableRight="@drawable/icon_arrow_down"
+                    android:visibility="gone" />
+
+                <!-- Chg1 -->
+
+                <TextView
+                    style="@style/multiscaninner_textview_style"
+                    android:gravity="left"
+                    android:text="@string/textview_multi_scan_inner_chg1" />
+
+                <Spinner
+                    android:id="@+id/multiscan_spinnerchg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/table_text_padding"
+                    android:layout_marginRight="@dimen/table_text_padding"
+                    android:drawableRight="@drawable/icon_arrow_down" />
+
+                <!-- Chg2 -->
+
+                <TextView
+                    style="@style/multiscaninner_textview_style"
+                    android:gravity="left"
+                    android:text="@string/textview_multi_scan_inner_chg2" />
+
+                <Spinner
+                    android:id="@+id/multiscan_spinnerchg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/table_text_padding"
+                    android:layout_marginRight="@dimen/table_text_padding"
+                    android:drawableRight="@drawable/icon_arrow_down" />
+
+                <!-- Scan -->
+
+                <LinearLayout
+                    android:id="@+id/tblCartoonContainer"
+                    style="@style/multiscaninner_tablelayout_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- <include layout="@layout/item_cartoon" /> -->
+                </LinearLayout>
+
+                <!-- Redelivery -->
+
+                <TextView
+                    style="@style/multiscaninner_textview_style"
+                    android:gravity="left"
+                    android:text="@string/textview_multi_scan_inner_redelivery" />
+
+                <Spinner
+                    android:id="@+id/multiscan_spinnerRedelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/table_text_padding"
+                    android:layout_marginRight="@dimen/table_text_padding"
+                    android:drawableRight="@drawable/icon_arrow_down" />
+
+                <!-- To -->
+
+                <TextView
+                    style="@style/multiscaninner_textview_style"
+                    android:gravity="left"
+                    android:text="@string/textview_multi_scan_inner_to" />
+
+                <EditText
+                    android:id="@+id/multiscan_editTo"
+                    style="@style/multiscaninner_edittext_style"
+                    android:layout_marginLeft="@dimen/table_text_padding"
+                    android:layout_marginRight="@dimen/table_text_padding" />
+
+                <!-- from -->
+
+                <TextView
+                    style="@style/multiscaninner_textview_style"
+                    android:gravity="left"
+                    android:text="@string/textview_multi_scan_inner_from" />
+
+                <EditText
+                    android:id="@+id/multiscan_editFrom"
+                    style="@style/multiscaninner_edittext_style"
+                    android:layout_marginLeft="@dimen/table_text_padding"
+                    android:layout_marginRight="@dimen/table_text_padding" />
+
+                <Button
+                    android:id="@+id/btnSavedetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/login_margin_left"
+                    android:layout_marginRight="@dimen/login_margin_left"
+                    android:layout_marginTop="@dimen/changepwd_margin_left"
+                    android:background="@drawable/btn_login"
+                    android:text="@string/checkout_textview_btn"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/tblLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txtCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="Confirm Company ID"
+                android:textColor="#287AA9"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="If Rejected tap photo button next to each rejection and take a clear photo of each rejected box label"
+                android:textColor="#287AA9"
+                android:textSize="18dp" />
+
+            <ScrollView
+                android:id="@+id/multiscan_scrll_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/custom_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnSavedetail_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="@dimen/login_margin_left"
+                        android:layout_marginRight="@dimen/login_margin_left"
+                        android:layout_marginTop="@dimen/changepwd_margin_left"
+                        android:background="@drawable/btn_login"
+                        android:text="@string/checkout_textview_btn"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFFFFFFF"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnLock"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/unlock_icon" />
+
+    <TextView
+        android:id="@+id/txtLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="50dp"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/lock_icon"
+        android:gravity="center"
+        android:text="This screen is locked.\nPlease long press the lock icon to unlock this screen."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

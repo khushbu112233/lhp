@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="login_margin_left">60dp</dimen>
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="login_txt_padding">10dp</dimen>
+    <dimen name="login_margin_top">40dp</dimen>
+    <dimen name="changepwdimg_margin_top">20dp</dimen>
+    <dimen name="login_margin_top3">2dp</dimen>
+    <dimen name="login_margin_top4">90dp</dimen>
+    <dimen name="login_margin_top5">20dp</dimen>
+    <dimen name="login_margin_topdb">80dp</dimen>
+    <dimen name="login_margin_topdb_layout3">50dp</dimen>
+    <dimen name="login_margin_topdb_layout4">40dp</dimen>
+    <dimen name="checkout_margin_left">145dp</dimen>
+    <dimen name="dashboard_icon_bg_padding">34dp</dimen>
+
+    <item name="ems" type="integer">27</item>
+    <item name="ems_small" type="integer">25</item>
+    <!-- text size -->
+    <dimen name="title_text_size">22dp</dimen>
+    <dimen name="dashboard_text_size">28sp</dimen>
+
+    <dimen name="table_text_padding">18dp</dimen>
+</resources>

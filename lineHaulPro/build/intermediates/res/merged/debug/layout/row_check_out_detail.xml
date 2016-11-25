@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/row_message_lnrContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/txtOrderNo"
+            style="@style/txt_detail_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="dsfsklfsdkfsd"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/txtType"
+            style="@style/txt_detail_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:singleLine="true"
+            android:text="dsfsklfsdkfsd"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtDate"
+        style="@style/txt_detail_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="dsfsklfsdkfsd"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
+    <View
+        style="@style/Full_View_Line"
+        android:layout_below="@+id/row_message_lnrContainer"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

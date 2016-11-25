@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cachedjob_txtCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/cachedjob_margin_left_btnretransmit"
+            android:layout_marginRight="@dimen/cachedjob_margin_right_textview"
+            android:padding="@dimen/cachedjob_margin_textview_padding"
+            android:text="@string/cachedjob_textview_text"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnretransmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cachedjob_margin_left_btnretransmit"
+            android:layout_marginRight="@dimen/cachedjob_margin_right_btnretransmit"
+            android:background="@drawable/btn_login"
+            android:padding="10dp"
+            android:text="@string/cachedjob_btn_text_retransmit"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btndeleteall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/cachedjob_margin_left_btnretransmit"
+            android:layout_marginRight="@dimen/cachedjob_margin_right_btnretransmit"
+            android:layout_marginTop="@dimen/cachedjob_margin_top_btndeleteall"
+            android:background="@drawable/btn_login"
+            android:padding="10dp"
+            android:text="@string/cachedjob_btn_text_deleteall"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

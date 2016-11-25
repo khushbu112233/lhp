@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/changepwdimg_margin_top"
+        android:contentDescription="@dimen/login_margin_left"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/change_pwd_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/changepwdimg_margin_top"
+        android:gravity="center"
+        android:text="@string/checkin_textview_title"
+        android:textColor="#287AA9"
+        android:textSize="@dimen/checkout_textview_size" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_margin_left"
+        android:layout_marginRight="@dimen/login_margin_left"
+        android:layout_marginTop="@dimen/checkout_margin_top_relativelayout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/checkout_textview_name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text=":"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkout_margin_left"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/login_txt_padding" >
+
+            <EditText
+                android:id="@+id/edtvehiclenamecheckin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_margin_left"
+        android:layout_marginRight="@dimen/login_margin_left"
+        android:layout_marginTop="@dimen/checkout_margin_top_relativelayout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Start Miles"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text=":"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkout_margin_left"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/login_txt_padding" >
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/edtstartmiles" -->
+            <!-- style="@style/login_txt_size" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="@dimen/checkout_margin_left" -->
+            <!-- android:background="@null" -->
+            <!-- android:padding="@dimen/login_txt_padding" /> -->
+
+            <EditText
+                android:id="@+id/edtstartmilescheckin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnsavedetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/checkout_margin_left_btn"
+        android:layout_marginRight="@dimen/login_margin_left"
+        android:layout_marginTop="@dimen/changepwd_margin_left"
+        android:background="@drawable/btn_login"
+        android:text="@string/checkout_textview_btn"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

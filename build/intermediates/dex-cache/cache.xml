@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.5/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="557bcc987cc2438e5162476bc8c953a37b683fb9">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.crashlytics.sdk.android-beta-1.1.5_0f65863501fe1349360c5412a3d1a9d31e18e047/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/libs/httpmime-4.1.2.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/2/httpmime-4.1.2_445a3cfdf58407d46079c17adb652f872a8dbaa3/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="c00e9190a14bcfc4ef68836a0f808833af222761">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f03b8eece19457e31d7fbadc084bdf591c2b0a90/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="37ca0d6ae8c2eec12676624adadc09712e7bf8a0">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f6d9bf742669fc0efffe6f47267f19f1d1b7eaeb/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/libs/jsr305-1.3.9.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/2/jsr305-1.3.9_4b7f16f150edd8f9a41221846615d869faa037fb/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/LHP/zxingLibrary/unspecified/jars/libs/core-3.1.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="b684c697b856f4bba4e08f0743c773625e729104">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/8/core-3.1.0_b9065d99e4568d5926e5bb4eff0d267e3709cdc1/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/AndroidSDK/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.0_0c95570e63c20eff4a7e68b477eab0da6020d563/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-8.4.0_738cf17f19acfe718751f8f9a5e60446207b9962/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/libs/android-async-http-1.4.6.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/2/android-async-http-1.4.6_b5fcf26721738e1415818f0e8be4a106a56c4c7d/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.9/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="6bcf11222c8dd57b4ddf4da06fa15c8fc3f903dd">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.crashlytics.sdk.android-crashlytics-core-2.3.9_21d20bd000856fdc3ff645b0f74e3b13231c0d06/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-8.4.0_16377740073bc4e03553654abb63af416ae1cd81/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.0_e2485488e06d8de87a7adb2ba8d4f2826a053d32/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_3dbd2fe2ec3071be87f372360724557954edf34f/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-measurement-8.4.0_6c0d52bffda6219a3a9206e3199e6dd490c0def4/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_3d567a74144b0ff12e064c0ab7e404e4cbdad1ac/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-8.4.0_d548ec6841c2224933262bbb2ac49b49dda7586a/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/libs/roboguice-2.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/2/roboguice-2.0_a023e7eeade3806b2108e85f7a90e30faaaa7957/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_e9a995263ce76679bc5d9c742cba0373ee611297/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.0_2bc7b1582679acd30bb63af8bbd418e27a18699d/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.6/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="cb73560edb89cb7afe1d0d5455595c27866af7c6">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.crashlytics.sdk.android-crashlytics-2.5.6_dab957e2d6c39bf7cf995d1b6bbba1db0fa57182/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.11/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="9505232840ada5bc281f012c9798a6e49900d4ea">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/io.fabric.sdk.android-fabric-1.3.11_f63d4ee2a402eada3b3bb56a89d62bc3167e715a/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/.local/share/umake/android/android-studio/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.2.4_da714ac5945d5e0c44c1ba02f908a935a297d83c/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.7/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="4711b6bd1e41291912e98c23954cb3d11ca36bd5">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.crashlytics.sdk.android-answers-1.3.7_e8a11d9d2fd9b70023f9bbbfed0621b00412193c/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/libs/guice-4.0-beta-no_aop.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="43eb7164d0a39e14bf31efb87a1e689ee7087d87">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/2/guice-4.0-beta-no_aop_8d77d6e68757ed59e5590098ce3090d0cb41c7d5/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/libs/javax.inject-1.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/2/javax.inject-1_b9a9234874c238a54ee1d0fcba918e8a1d25bc41/classes.dex" />
+    </item>
+    <item
+        jar="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_40546237fc7d461892e1662f81adccd6f8d9cb26/classes.dex" />
+    </item>
+
+</items>

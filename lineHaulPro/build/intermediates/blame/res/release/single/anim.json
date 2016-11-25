@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/spinner.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/anim/spinner.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/spinner.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/anim/spinner.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/spinner.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/anim/spinner.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/anim/abc_slide_in_bottom.xml"
+    }
+]

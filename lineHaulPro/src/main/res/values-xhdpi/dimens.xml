@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="login_margin_left">50dp</dimen>
+    <dimen name="changepwdimg_margin_top">20dp</dimen>
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="login_txt_padding">5dp</dimen>
+    <dimen name="login_margin_top">10dp</dimen>
+    <dimen name="login_margin_top3">2dp</dimen>
+    <dimen name="login_margin_top4">25dp</dimen>
+    <dimen name="login_margin_topdb">50dp</dimen>
+    <dimen name="db_txt_size">12sp</dimen>
+    <dimen name="dashboard_icon_bg_padding">10dp</dimen>
+
+    <!-- ems -->
+    <item name="ems" type="integer">10</item>
+    <item name="ems_small" type="integer">8</item>
+
+    <dimen name="title_text_size">20dp</dimen>
+    <dimen name="dashboard_text_size">12sp</dimen>
+    
+    <dimen name="table_text_padding">10dp</dimen>
+
+    <dimen name="form_text_size">17sp</dimen>
+</resources>

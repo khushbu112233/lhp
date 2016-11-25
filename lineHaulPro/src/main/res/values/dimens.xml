@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--     <dimen name="changepwdimg_margin_top">10dp</dimen> -->
+    <dimen name="line_height">0.5dp</dimen>
+<!--     <dimen name="login_txt_padding">10dp</dimen> -->
+    <!-- Dashboard page style -->
+    <dimen name="db_margin_left">18dp</dimen>
+    <dimen name="db_margin_left_layout3_img1">8dp</dimen>
+    <dimen name="db_margin_leftlo2">52dp</dimen>
+    <dimen name="db_margin_leftlo3">18dp</dimen>
+    <dimen name="db_margin_leftlo2_img3">20dp</dimen>
+    <dimen name="db_margin_left_layot3_img3">5dp</dimen>
+    <dimen name="db_margin_left_layout4">70dp</dimen>
+    <dimen name="db_margin_left_layout4_img2">60dp</dimen>
+    <dimen name="db_margin_left_layout4_img1">40dp</dimen>
+    <dimen name="db_txt_size">8sp</dimen>
+    <dimen name="dashboard_icon_bg_padding">30dp</dimen>
+
+    <!-- chackout screen -->
+    <dimen name="checkout_margin_left">120dp</dimen>
+    <dimen name="checkout_textview_size">20dp</dimen>
+    <dimen name="checkout_margin_top_relativelayout">20dp</dimen>
+    <dimen name="checkout_margin_left_edittext">150dp</dimen>
+    <!-- multiscan screen -->
+    <dimen name="multiscan_margin_top_textview">2dp</dimen>
+    <dimen name="multiscan_margin_right_edittext">15dp</dimen>
+    <dimen name="multiscan_margin_top_tablerow">4dp</dimen>
+    <!-- cachedjob screen -->
+    <dimen name="cachedjob_margin_left_btnretransmit">10dp</dimen>
+    <dimen name="cachedjob_margin_right_btnretransmit">10dp</dimen>
+    <dimen name="cachedjob_margin_left_btndeleteall">10dp</dimen>
+    <dimen name="cachedjob_margin_right_btndeleteall">10dp</dimen>
+    <dimen name="cachedjob_margin_top_btndeleteall">5dp</dimen>
+    <dimen name="cachedjob_margin_left_texview">18dp</dimen>
+    <dimen name="cachedjob_margin_right_textview">10dp</dimen>
+    <dimen name="cachedjob_margin_textview_padding">5dp</dimen>
+    
+    <dimen name="inner_text_size">15dp</dimen>
+
+</resources>

@@ -1,0 +1,618 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imgAppWeb"
+        android:layout_below="@+id/header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginTop="@dimen/changepwdimg_margin_top" -->
+            <!-- android:contentDescription="@dimen/login_margin_left" -->
+            <!-- android:src="@drawable/ic_launcher" /> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dashboard_icon_bg_padding"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_changepassword"
+                        style="@style/dashboard_icon_background"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/ivchangepwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_change_password" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_change_pwd"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/llcachedjobs"
+                            style="@style/dashboard_icon_background" >
+
+                            <ImageView
+                                android:id="@+id/ivcachedjobs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_cached_jobs" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvcachedjobs"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@+id/llcachedjobs"
+                            android:background="@drawable/notification"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_retransmit_cachedjobs"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_multiscan"
+                        style="@style/dashboard_icon_background" >
+
+                        <ImageView
+                            android:id="@+id/ivmultiscan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_multi_scanner" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_multiscan"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_checkout"
+                        style="@style/dashboard_icon_background" >
+
+                        <ImageView
+                            android:id="@+id/ivcheckout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_check_out" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_checkout"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/lldeletecachedjobs"
+                            style="@style/dashboard_icon_background" >
+
+                            <ImageView
+                                android:id="@+id/ivcachedjobs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_cached_jobs" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvdeletecachedjobs"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@+id/lldeletecachedjobs"
+                            android:background="@drawable/notification"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_delete_cachedjobs"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/lladdresslist"
+                        style="@style/dashboard_icon_background" >
+
+                        <ImageView
+                            android:id="@+id/ivaddresslist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_driver_details" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/address_detail"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+
+                <!-- <LinearLayout -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_weight="0.33" -->
+                <!-- android:gravity="center" -->
+                <!-- android:orientation="vertical" > -->
+
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/ll_scansettings" -->
+                <!-- style="@style/dashboard_icon_background" > -->
+
+
+                <!-- <ImageView -->
+                <!-- android:id="@+id/ivscansettings" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:src="@drawable/icon_scan_settings" /> -->
+                <!-- </LinearLayout> -->
+
+
+                <!-- <TextView -->
+                <!-- style="@style/dashboard_icon_title_txt" -->
+                <!-- android:text="@string/textview_scansettings" -->
+                <!-- android:textSize="@dimen/dashboard_text_size" /> -->
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_reference"
+                        style="@style/dashboard_icon_background" >
+
+                        <ImageView
+                            android:id="@+id/ivreference"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_comments" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_reference"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_linehauls"
+                        style="@style/dashboard_icon_background" >
+
+                        <ImageView
+                            android:id="@+id/ivlinehauls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_check_out" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_line_hauls"
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_line_hauls"
+                        android:textSize="@dimen/dashboard_text_size" />
+                    
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_logout"
+                        style="@style/dashboard_icon_background" >
+
+                        <ImageView
+                            android:id="@+id/ivexit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_exit" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_exit"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+
+                <!-- <LinearLayout -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_weight="0.33" -->
+                <!-- android:gravity="center" -->
+                <!-- android:orientation="vertical" > -->
+
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/ll_scansettings" -->
+                <!-- style="@style/dashboard_icon_background" > -->
+
+
+                <!-- <ImageView -->
+                <!-- android:id="@+id/ivscansettings" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:src="@drawable/icon_scan_settings" /> -->
+                <!-- </LinearLayout> -->
+
+
+                <!-- <TextView -->
+                <!-- style="@style/dashboard_icon_title_txt" -->
+                <!-- android:text="@string/textview_scansettings" -->
+                <!-- android:textSize="@dimen/dashboard_text_size" /> -->
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:id="@+id/dashboard_lnrRouteAppContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_routeapp"
+                        style="@style/dashboard_icon_background"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/ivrouteapp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_switch_to_route"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_switchtorouteapp"
+                        android:textSize="@dimen/dashboard_text_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dashboard_lnrGroupPhotAppContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_groupphoto"
+                        style="@style/dashboard_icon_background" >
+
+                        <ImageView
+                            android:id="@+id/ivgroupphoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_group_photo" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_groupphoto"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_driverdetails"
+                        style="@style/dashboard_icon_background"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/ivdriverdetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_driver_details" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_driver_detail"
+                        android:textSize="@dimen/dashboard_text_size"
+                        android:visibility="gone" />
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <!--
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_driverdetails"
+                style="@style/dashboard_icon_background" >
+
+                <ImageView
+                    android:id="@+id/ivdriverdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_driver_details" />
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                style="@style/dashboard_icon_title_txt"
+                android:text="@string/textview_driver_detail"
+                android:textSize="@dimen/dashboard_text_size" />
+                    -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <!--
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                style="@style/dashboard_icon_background" >
+
+                <ImageView
+                    android:id="@+id/ivexit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_exit" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/dashboard_icon_title_txt"
+                android:text="@string/textview_exit"
+                android:textSize="@dimen/dashboard_text_size" />
+                    -->
+                </LinearLayout>
+
+                <!-- <LinearLayout -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_weight="0.33" -->
+                <!-- android:gravity="center" -->
+                <!-- android:orientation="vertical" > -->
+
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/ll_scansettings" -->
+                <!-- style="@style/dashboard_icon_background" > -->
+
+
+                <!-- <ImageView -->
+                <!-- android:id="@+id/ivscansettings" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:src="@drawable/icon_scan_settings" /> -->
+                <!-- </LinearLayout> -->
+
+
+                <!-- <TextView -->
+                <!-- style="@style/dashboard_icon_title_txt" -->
+                <!-- android:text="@string/textview_scansettings" -->
+                <!-- android:textSize="@dimen/dashboard_text_size" /> -->
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="horizontal" -->
+            <!-- android:weightSum="1" > -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="0.33" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <LinearLayout style="@style/dashboard_icon_background" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:src="@drawable/icon_preferences" -->
+            <!-- android:id="@+id/ivpreferences"/> -->
+            <!-- </LinearLayout> -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/dashboard_icon_title_txt" -->
+            <!-- android:text="@string/textview_preferences" -->
+            <!-- android:textSize="@dimen/dashboard_text_size" /> -->
+            <!-- </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!-- <LinearLayout style="@style/dashboard_icon_background" > -->
+
+
+                <!-- <ImageView -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:src="@drawable/icon_exit" -->
+                <!-- android:id="@+id/ivexit"/> -->
+                <!-- </LinearLayout> -->
+
+
+                <!-- <TextView -->
+                <!-- style="@style/dashboard_icon_title_txt" -->
+                <!-- android:text="@string/textview_exit" -->
+                <!-- android:textSize="@dimen/dashboard_text_size" /> -->
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imgAppWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/app_soft" />
+
+</RelativeLayout>

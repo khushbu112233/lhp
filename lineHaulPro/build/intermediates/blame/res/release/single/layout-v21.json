@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
+    }
+]
