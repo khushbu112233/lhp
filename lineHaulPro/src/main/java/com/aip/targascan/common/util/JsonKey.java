@@ -4,7 +4,7 @@ import android.util.Log;
 
 public class JsonKey {
 
-	public static final String DUMMY_URL = "https://www.yourcargoonline.com";
+	public static final String DUMMY_URL = "https://api.yourcargoonline.com/index.php";
 	private static final String API_POSTFIX = "/APP_CONTROLLER/index.php/api/";
 	public static final String AUTH_KEY = "authKey";
 	// private static final String MAIN_URL =
@@ -12,7 +12,7 @@ public class JsonKey {
 	// private static final String MAIN_URL =
 	// "http://apptechnolabs.com/projects/linehaul_pro/index.php/api/"; //
 	// 10/12/2014
-	public static String MAIN_URL = "https://www.yourcargoonline.com"; // 10/12/2014
+	public static String MAIN_URL = "https://api.yourcargoonline.com/index.php"; // 10/12/2014
 	// private static final String MAIN_URL =
 	// "http://cargotracking.solutions/APP_CONTROLLER/index.php/api/"; //
 	// 10/12/2014
