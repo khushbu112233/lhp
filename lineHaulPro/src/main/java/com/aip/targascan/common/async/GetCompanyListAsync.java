@@ -93,7 +93,7 @@ public class GetCompanyListAsync extends AsyncTask<Void, Void, String> {
 					for (int i = 0; i < cast.length(); i++) {
 						JSONObject actor = cast.getJSONObject(i);
 						name = actor.getString( "name");
-						Log.d("co_type:", name);
+						Log.d("co_type:",""+ name);
 						database.addDataCompany(name);
 					}
 				}

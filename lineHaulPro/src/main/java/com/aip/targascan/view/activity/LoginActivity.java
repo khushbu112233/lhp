@@ -33,6 +33,7 @@ import com.aip.targascan.common.util.JsonKey;
 import com.aip.targascan.common.util.L;
 import com.aip.targascan.common.util.L.IL;
 import com.aip.targascan.common.util.Logger;
+import com.aip.targascan.common.util.Pref;
 import com.aip.targascan.common.util.SharedPrefrenceUtil;
 import com.aip.targascan.common.util.Util;
 import com.aip.targascan.common.util.Util.IOnUrlSelcted;
@@ -304,6 +305,7 @@ public class LoginActivity extends RoboActivity {
                                     SharedPrefrenceUtil.setPrefrence(getApplicationContext(), Constants.PREF_MASTER_COMPANY_KEY,
                                             responseJson.optString("master_company"));
                                     Log.d("URl", "URL: " + spinUrls.getText());
+                                    Pref.setValue(LoginActivity.this,"Selected_url",spinUrls.getText().toString());
                                 }
                             } catch (Exception e) {
 

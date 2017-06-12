@@ -1,136 +1,25 @@
--injars /home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar
--outjars /home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/multi-dex/release/componentClasses.jar
+-injars '/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar'
+-outjars '/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/multi-dex/release/componentClasses.jar'
 
--libraryjars /home/aipxperts/Android/Sdk/build-tools/23.0.3/lib/shrinkedAndroid.jar
+-libraryjars /home/aipxperts-ubuntu-01/Android/Sdk/build-tools/25.0.0/lib/shrinkedAndroid.jar
 
 -forceprocessing
 -dontoptimize
 -dontobfuscate
 -dontusemixedcaseclassnames
 -dontpreverify
--dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontnote **
 -dontwarn **
--printconfiguration /home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/multi-dex/release/components.flags
+-printconfiguration '/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/multi-dex/release/components.flags'
 
 
--keep class com.aip.targascan.view.activity.SplashActivity {
+-keep public class * extends android.app.Instrumentation {
     <init>();
 }
 
--keep class com.aip.targascan.view.activity.CachedjobsActivity {
+-keep public class * extends android.app.Application {
     <init>();
-}
-
--keep class com.aip.targascan.view.activity.SettingActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.ChangepwdActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.LineHaulActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.DriverdetailActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.ExitActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.GroupphotoActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.CheckInActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.PreferencesActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.ScanninghelpActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.ScansettingsActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.Switchorouteapp {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.DashboardActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.MultiScanInner {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.Preferences {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.LoginActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.CheckoutActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.PreferenceActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.service.DataLoaderService {
-    <init>();
-}
-
--keep class com.aip.targascan.CachedJobActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.SignatureActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.CheckOutDetailActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.frag.SimpleScannerActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.AddressListActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.view.activity.ReferenceActivity {
-    <init>();
-}
-
--keep class com.aip.targascan.map.MapActivity {
-    <init>();
-}
-
--keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
-    <init>();
-}
-
--keep class com.google.android.gms.measurement.AppMeasurementReceiver {
-    <init>();
-}
-
--keep class com.google.android.gms.measurement.AppMeasurementService {
-    <init>();
+    void attachBaseContext(android.content.Context);
 }
 
 -keep public class * extends android.app.backup.BackupAgent {

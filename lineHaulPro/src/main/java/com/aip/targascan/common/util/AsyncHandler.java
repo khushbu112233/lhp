@@ -33,6 +33,7 @@ public abstract class AsyncHandler extends JsonHttpResponseHandler implements On
 
 	@Override
 	public void onFinish() {
+
 		if(showProgressHud)
 		{
 			if(mProgressHUD != null && mProgressHUD.isShowing())

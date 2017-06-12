@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/values-sw600dp-v13/values-sw600dp-v13.xml",
+        "outputFile": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 189
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 263
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 339
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 398
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 469
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 537
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 592
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 645
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 702
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 753
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 5,
@@ -220,7 +220,7 @@
                     "endOffset": 797
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 845
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 893
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 942
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 991
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1041
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1099
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 1157
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 1205
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -391,7 +391,7 @@
                     "endOffset": 1255
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 5,
@@ -410,7 +410,7 @@
                     "endOffset": 1302
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 1357
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -448,7 +448,7 @@
                     "endOffset": 1403
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -467,967 +467,7 @@
                     "endOffset": 1455
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 778,
-                        "endColumn": 51,
-                        "endOffset": 825
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/values-sw600dp-v13/values-sw600dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 68,
-                    "endOffset": 119
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 68,
-                        "endOffset": 344
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 124,
-                    "endColumn": 69,
-                    "endOffset": 189
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 349,
-                        "endColumn": 69,
-                        "endOffset": 414
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 194,
-                    "endColumn": 73,
-                    "endOffset": 263
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 419,
-                        "endColumn": 73,
-                        "endOffset": 488
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 268,
-                    "endColumn": 75,
-                    "endOffset": 339
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 493,
-                        "endColumn": 75,
-                        "endOffset": 564
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 344,
-                    "endColumn": 58,
-                    "endOffset": 398
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 794,
-                        "endColumn": 58,
-                        "endOffset": 848
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 403,
-                    "endColumn": 70,
-                    "endOffset": 469
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1078,
-                        "endColumn": 70,
-                        "endOffset": 1144
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 474,
-                    "endColumn": 67,
-                    "endOffset": 537
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1149,
-                        "endColumn": 67,
-                        "endOffset": 1212
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 542,
-                    "endColumn": 54,
-                    "endOffset": 592
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 206,
-                        "endColumn": 54,
-                        "endOffset": 256
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 597,
-                    "endColumn": 52,
-                    "endOffset": 645
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 573,
-                        "endColumn": 52,
-                        "endOffset": 621
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 650,
-                    "endColumn": 56,
-                    "endOffset": 702
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 626,
-                        "endColumn": 56,
-                        "endOffset": 678
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 707,
-                    "endColumn": 50,
-                    "endOffset": 753
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 5,
-                        "startOffset": 901,
-                        "endColumn": 51,
-                        "endOffset": 947
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 758,
-                    "endColumn": 43,
-                    "endOffset": 797
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 43,
-                        "endOffset": 95
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 802,
-                    "endColumn": 47,
-                    "endOffset": 845
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 158,
-                        "endColumn": 47,
-                        "endOffset": 201
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 850,
-                    "endColumn": 47,
-                    "endOffset": 893
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 261,
-                        "endColumn": 47,
-                        "endOffset": 304
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 898,
-                    "endColumn": 48,
-                    "endOffset": 942
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 309,
-                        "endColumn": 48,
-                        "endOffset": 353
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 947,
-                    "endColumn": 48,
-                    "endOffset": 991
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 358,
-                        "endColumn": 48,
-                        "endOffset": 402
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 996,
-                    "endColumn": 49,
-                    "endOffset": 1041
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 407,
-                        "endColumn": 49,
-                        "endOffset": 452
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1046,
-                    "endColumn": 57,
-                    "endOffset": 1099
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 457,
-                        "endColumn": 57,
-                        "endOffset": 510
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 1104,
-                    "endColumn": 57,
-                    "endOffset": 1157
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 515,
-                        "endColumn": 57,
-                        "endOffset": 568
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 1162,
-                    "endColumn": 47,
-                    "endOffset": 1205
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 683,
-                        "endColumn": 47,
-                        "endOffset": 726
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 1210,
-                    "endColumn": 49,
-                    "endOffset": 1255
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 5,
-                        "startOffset": 953,
-                        "endColumn": 50,
-                        "endOffset": 998
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 1260,
-                    "endColumn": 46,
-                    "endOffset": 1302
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 853,
-                        "endColumn": 46,
-                        "endOffset": 895
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 1307,
-                    "endColumn": 54,
-                    "endOffset": 1357
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1217,
-                        "endColumn": 54,
-                        "endOffset": 1267
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 1362,
-                    "endColumn": 45,
-                    "endOffset": 1403
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 732,
-                        "endColumn": 45,
-                        "endOffset": 773
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 1408,
-                    "endColumn": 51,
-                    "endOffset": 1455
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 778,
-                        "endColumn": 51,
-                        "endOffset": 825
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/values-sw600dp-v13/values-sw600dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 68,
-                    "endOffset": 119
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 68,
-                        "endOffset": 344
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 124,
-                    "endColumn": 69,
-                    "endOffset": 189
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 349,
-                        "endColumn": 69,
-                        "endOffset": 414
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 194,
-                    "endColumn": 73,
-                    "endOffset": 263
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 419,
-                        "endColumn": 73,
-                        "endOffset": 488
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 268,
-                    "endColumn": 75,
-                    "endOffset": 339
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 493,
-                        "endColumn": 75,
-                        "endOffset": 564
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 344,
-                    "endColumn": 58,
-                    "endOffset": 398
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 794,
-                        "endColumn": 58,
-                        "endOffset": 848
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 403,
-                    "endColumn": 70,
-                    "endOffset": 469
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1078,
-                        "endColumn": 70,
-                        "endOffset": 1144
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 474,
-                    "endColumn": 67,
-                    "endOffset": 537
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1149,
-                        "endColumn": 67,
-                        "endOffset": 1212
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 542,
-                    "endColumn": 54,
-                    "endOffset": 592
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 206,
-                        "endColumn": 54,
-                        "endOffset": 256
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 597,
-                    "endColumn": 52,
-                    "endOffset": 645
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 573,
-                        "endColumn": 52,
-                        "endOffset": 621
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 650,
-                    "endColumn": 56,
-                    "endOffset": 702
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 626,
-                        "endColumn": 56,
-                        "endOffset": 678
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 707,
-                    "endColumn": 50,
-                    "endOffset": 753
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 5,
-                        "startOffset": 901,
-                        "endColumn": 51,
-                        "endOffset": 947
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 758,
-                    "endColumn": 43,
-                    "endOffset": 797
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 43,
-                        "endOffset": 95
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 802,
-                    "endColumn": 47,
-                    "endOffset": 845
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 158,
-                        "endColumn": 47,
-                        "endOffset": 201
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 850,
-                    "endColumn": 47,
-                    "endOffset": 893
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 261,
-                        "endColumn": 47,
-                        "endOffset": 304
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 898,
-                    "endColumn": 48,
-                    "endOffset": 942
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 309,
-                        "endColumn": 48,
-                        "endOffset": 353
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 947,
-                    "endColumn": 48,
-                    "endOffset": 991
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 358,
-                        "endColumn": 48,
-                        "endOffset": 402
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 996,
-                    "endColumn": 49,
-                    "endOffset": 1041
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 407,
-                        "endColumn": 49,
-                        "endOffset": 452
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1046,
-                    "endColumn": 57,
-                    "endOffset": 1099
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 457,
-                        "endColumn": 57,
-                        "endOffset": 510
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 1104,
-                    "endColumn": 57,
-                    "endOffset": 1157
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 515,
-                        "endColumn": 57,
-                        "endOffset": 568
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 1162,
-                    "endColumn": 47,
-                    "endOffset": 1205
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 683,
-                        "endColumn": 47,
-                        "endOffset": 726
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 1210,
-                    "endColumn": 49,
-                    "endOffset": 1255
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 5,
-                        "startOffset": 953,
-                        "endColumn": 50,
-                        "endOffset": 998
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 1260,
-                    "endColumn": 46,
-                    "endOffset": 1302
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 853,
-                        "endColumn": 46,
-                        "endOffset": 895
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 1307,
-                    "endColumn": 54,
-                    "endOffset": 1357
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1217,
-                        "endColumn": 54,
-                        "endOffset": 1267
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 1362,
-                    "endColumn": 45,
-                    "endOffset": 1403
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 732,
-                        "endColumn": 45,
-                        "endOffset": 773
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 1408,
-                    "endColumn": 51,
-                    "endOffset": 1455
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,

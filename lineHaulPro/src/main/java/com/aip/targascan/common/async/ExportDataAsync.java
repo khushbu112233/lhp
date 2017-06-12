@@ -75,6 +75,13 @@ public class ExportDataAsync extends AsyncTask<Void, Void, String> implements On
 				} else {
 					params.put(JsonKey.MUTISCAN.signData, "");
 				}
+				if (cachedjob.getDocumentData() == null) {
+					params.put(JsonKey.MUTISCAN.documentData, "");
+				} else if (cachedjob.getDocumentData().toString().length() > 0) {
+					params.put(JsonKey.MUTISCAN.documentData, cachedjob.getDocumentData());
+				} else {
+					params.put(JsonKey.MUTISCAN.documentData, "");
+				}
 				params.put(JsonKey.MUTISCAN.system, cachedjob.getSystem());
 				params.put(JsonKey.MUTISCAN.to, cachedjob.getTo());
 				params.put(JsonKey.MUTISCAN.from, cachedjob.getFrom());

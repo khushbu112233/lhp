@@ -1,2 +1,2 @@
-include ':zxingLibrary'
+include ':zxingLibrary', ':scanlibrary'
 include ':lineHaulPro'

@@ -310,8 +310,8 @@
                         style="@style/dashboard_icon_title_txt"
                         android:text="@string/textview_line_hauls"
                         android:textSize="@dimen/dashboard_text_size" />
-                    
-                    
+
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -322,19 +322,20 @@
                     android:orientation="vertical" >
 
                     <LinearLayout
-                        android:id="@+id/ll_logout"
+                        android:id="@+id/ll_scan"
                         style="@style/dashboard_icon_background" >
 
                         <ImageView
-                            android:id="@+id/ivexit"
+                            android:id="@+id/ivscan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/icon_exit" />
+                            android:src="@drawable/icon_scan_setting" />
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/txt_document_scan"
                         style="@style/dashboard_icon_title_txt"
-                        android:text="@string/textview_exit"
+                        android:text="@string/textview_scan_setting"
                         android:textSize="@dimen/dashboard_text_size" />
                 </LinearLayout>
 
@@ -365,7 +366,54 @@
                 <!-- android:textSize="@dimen/dashboard_text_size" /> -->
                 <!-- </LinearLayout> -->
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dashboard_icon_bg_padding"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
 
+                    <LinearLayout
+                        android:id="@+id/ll_logout"
+                        style="@style/dashboard_icon_background"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/ivexit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_exit" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_logout"
+                        style="@style/dashboard_icon_title_txt"
+                        android:text="@string/textview_exit"
+                        android:textSize="@dimen/dashboard_text_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -461,7 +509,7 @@
                         android:text="@string/textview_driver_detail"
                         android:textSize="@dimen/dashboard_text_size"
                         android:visibility="gone" />
-                    
+
                 </LinearLayout>
 
                 <LinearLayout

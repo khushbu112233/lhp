@@ -1,6 +1,5 @@
 package com.aip.targascan.vo;
 
-
 public class Cachedjob {
 	//private variables
 	private int id;
@@ -16,6 +15,7 @@ public class Cachedjob {
 	private String cachedDate;
 	private String system;
 	private String servId;
+	private String documentData;
 
 	// getting ID
 	public String getSignatureName(){
@@ -44,7 +44,7 @@ public class Cachedjob {
 	public void setChg1(String chg1){
 		this._chg1 = chg1;
 	}
-	
+
 	public String getChg2(){
 		return this._chg2;
 	}
@@ -52,11 +52,11 @@ public class Cachedjob {
 	public void setChg2(String chg2){
 		this._chg2 = chg2;
 	}
-	
+
 	public String getcartoon1(){
 		return this._cartoon1;
 	}
-	
+
 	public void setCartoon1(String cartoon1 ){
 		this._cartoon1 =cartoon1 ;
 	}
@@ -64,27 +64,27 @@ public class Cachedjob {
 	public String getRedelivery(){
 		return  this._redelivery;
 	}
-	
+
 	public void setRedelivery(String redelivery){
 		this._redelivery = redelivery;
 	}
-	
+
 	public String getTo(){
 		return  this._to;
 	}
-	
+
 	public void setTo(String to){
 		this._to = to;
 	}
-	
+
 	public String getFrom(){
 		return  this._from;
 	}
-	
+
 	public void setFrom(String from){
 		this._from = from;
 	}
-	
+
 	public void setSignatureName(String signature) {
 		this._signatureName = signature;
 	}
@@ -112,14 +112,22 @@ public class Cachedjob {
 	public void setServId(String servId) {
 		this.servId = servId;
 	}
-	
+
+	public String getDocumentData() {
+		return documentData;
+	}
+
+	public void setDocumentData(String documentData) {
+		this.documentData = documentData;
+	}
+
 	@Override
 	public String toString() {
 		return "Cachedjob [id=" + id + ", _signatureName=" + _signatureName + ", _companyid=" + _companyid + ", _chg1=" + _chg1
 				+ ", _chg2=" + _chg2 + ", _cartoon1=" + _cartoon1 + ", _redelivery=" + _redelivery + ", _to=" + _to + ", _from=" + _from
-				+ ", encodeSign=" + encodeSign + ", cachedDate=" + cachedDate + ", system=" + system + ", servId=" + servId + "]";
+				+ ", encodeSign=" + encodeSign + ", cachedDate=" + cachedDate + ", system=" + system +",documentData="+ documentData+ ", servId=" + servId + "]";
 	}
-	
+
 }
 
 

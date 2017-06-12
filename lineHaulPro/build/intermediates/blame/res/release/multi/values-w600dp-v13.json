@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/res/merged/release/values-w600dp-v13/values-w600dp-v13.xml",
+        "outputFile": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 114
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w600dp/values-w600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-w600dp/values-w600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,93 +30,7 @@
                     "endOffset": 169
                 },
                 "from": {
-                    "file": "/home/dharmesh/khushbu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w600dp/values-w600dp.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 343,
-                        "endColumn": 54,
-                        "endOffset": 393
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/release/values-w600dp-v13/values-w600dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 63,
-                    "endOffset": 114
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w600dp/values-w600dp.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 279,
-                        "endColumn": 63,
-                        "endOffset": 338
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 119,
-                    "endColumn": 54,
-                    "endOffset": 169
-                },
-                "from": {
-                    "file": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w600dp/values-w600dp.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 343,
-                        "endColumn": 54,
-                        "endOffset": 393
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/res/merged/release/values-w600dp-v13/values-w600dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 63,
-                    "endOffset": 114
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w600dp/values-w600dp.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 279,
-                        "endColumn": 63,
-                        "endOffset": 338
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 119,
-                    "endColumn": 54,
-                    "endOffset": 169
-                },
-                "from": {
-                    "file": "/home/dharmesh/ANDROID_PROJECTS/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/values-w600dp/values-w600dp.xml",
+                    "file": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/values-w600dp/values-w600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,

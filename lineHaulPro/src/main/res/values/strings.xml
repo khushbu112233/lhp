@@ -39,6 +39,7 @@
     <string name="textview_preferences">Preferences</string>
     <string name="textview_exit">Logout</string>
     <string name="textview_reference">Extra Comments</string>
+    <string name="textview_scan_setting">Scan Setting</string>
     
     <!-- string for checkout -->
     <string name="reference">Reference</string>
@@ -69,6 +70,8 @@
     <string name="multiscan_targascan_errormsg_to">Please enter to</string>
     <string name="multiscan_targascan_errormsg_from">Please enter from</string>
     <string name="multiscan_targascan_errormsg_sign">Please add your signature</string>
+    <string name="multiscan_targascan_errormsg_document">Please scan a document in order to submit this order.</string>
+    <string name="Only_Ycol">This feature is not available for CTS.</string>
     <!-- string for Login -->
     <string name="login_driverid">Please enter driver id</string>
     <string name="login_edtusername">Please enter user name</string>

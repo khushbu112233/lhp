@@ -24,13 +24,15 @@ public class JsonKey {
 	private static final String URL_CHECK_IN = "checkIn";
 	private static final String URL_CHECK_OUT = "checkOut";
 	private static final String URL_MULTI_SCAN = "multiScan";
+	private static final String URL_MUST_SCAN_CO_TYPE = "getMustScanCoType";
+
 	private static final String URL_MULTI_SCAN_CO_TYPE = "multiScanCoType";
 	private static final String URL_MULTI_SCAN_CO_TYPE_DRIVER_ROUTE_LABEL = "insertDriverRouteLabel";
 	private static final String URL_DRIVER_DETAIL = "driverDetail";
 	private static final String URL_INSERT_REFERENCE = "insertReference";
 	private static final String URL_GET_DAILY_ORDERS = "getDailyOrders";
 	private static final String URL_CHECK_CARTON_NUMBER = "checkCartonNumbers";
-
+	private static final String URL_MULTI_SCAN_CO_TYPE_WITH_DOCUMENT = "multiScanCoTypeWithDocument";
 	//public static final String URL_GET_DOMAINS = "http://domains.linehaulpro.com/provide_domain_names.php?passphrase=0l1oepi1o71v5";
 
 	public static final String URL_GET_DOMAINS = "https://api.yourcargoonline.com/provide_domain_names.php?passphrase=0l1oepi1o71v5";
@@ -129,11 +131,17 @@ public class JsonKey {
 	}
 
 	public static String getURL_MULTI_SCAN_CO_TYPE() {
+		return MAIN_URL + URL_MULTI_SCAN_CO_TYPE_WITH_DOCUMENT;
+	}
+	public static String getURL_MULTI_SCAN_CO_TYPE_old() {
 		return MAIN_URL + URL_MULTI_SCAN_CO_TYPE;
 	}
 
 	public static String getURL_MULTI_SCAN_CO_TYPE_DRIVER_ROUTE_LABEL() {
 		return MAIN_URL + URL_MULTI_SCAN_CO_TYPE_DRIVER_ROUTE_LABEL;
+	}
+	public static String getURL_MUST_SCAN_CO_TYPE() {
+		return MAIN_URL + URL_MUST_SCAN_CO_TYPE;
 	}
 
 	public static String getURL_DRIVER_DETAIL() {
@@ -193,6 +201,20 @@ public class JsonKey {
 		String ass2 = "ass2";
 		String system = "system";
 		String servID = "servID";
-	}
+		String documentData = "documentData";	}
+	public interface MUTISCAN_old {
+		String DID = "did";
+		String redeliver = "redeliver";
+		String cust_name = "cust_name";
+		String cn = "cn";
+		String signData = "signData";
+		String co_type = "co_type";
+		String cached_date = "cached_date";
+		String to = "to";
+		String from = "from";
+		String ass1 = "ass1";
+		String ass2 = "ass2";
+		String system = "system";
+		String servID = "servID";	}
 
 }

@@ -13,6 +13,7 @@ import android.util.Log;
 
 import com.aip.targascan.common.util.Constants;
 import com.aip.targascan.common.util.Util;
+import com.aip.targascan.model.Co_type;
 import com.aip.targascan.vo.Cachedjob;
 import com.aip.targascan.vo.Chg;
 import com.aip.targascan.vo.Company;
@@ -23,7 +24,10 @@ import com.aip.targascan.vo.DriverRoute;
 import com.aip.targascan.vo.DriverRouteData;
 import com.aip.targascan.vo.DriverRouteTimeStatus;
 import com.aip.targascan.vo.Login;
+import com.aip.targascan.vo.OrderDeliver;
 import com.aip.targascan.vo.Redeliver;
+
+import static java.util.Calendar.MINUTE;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
 
@@ -46,6 +50,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	static final String TABLE_DRIVER_ROUTE_TIME_STATUS_DETAILS = "driver_route_time_status_details";
 	static final String TABLE_COMPANY_REJECTION = "company_rejection_list";
 	static final String TABLE_DRIVER_LABEL = "driver_label";
+	static final String TABLE_CO_TYPE = "co_type";
+	static final String TABLE_ORDER_DELIVER = "order_deliver";
+
+
+	//column names for CO_TYPE table
+	private static final String KEY_CO_TYPE_TABLE = "co_type";
+
+	// column names for ORDER_DELIVER
+	private static final String KEY_ORDER_DELIVER_CARTUN_NUM = "carton_num";
+	private static final String KEY_ORDER_DELIVER_ASS1= "ass1";
+	private static final String KEY_ORDER_DELIVER_ASS2 = "ass2";
+	private static final String KEY_ORDER_DELIVER_CO_TYPE = "co_type";
+	private static final String KEY_ORDER_DELIVER_TIMESTAMP = "time_stamp";
+
+
 	// Contacts Table Columns names
 	private static final String KEY_LOGINID = "id";
 	private static final String KEY_DRIVERID = "driverid";
@@ -74,6 +93,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	private static final String KEY_SYSTEM = "system";
 	private static final String KEY_SERV_ID = "servid";
 	private static final String KEY_ID = "id";
+	private static final String KEY_DOCUMENT_SIGN = "document";
 	// DRIVER_ROUTE TABLE COLUMN NAME
 	private static final String KEY_ROUTE_ID = "id";
 	private static final String KEY_ROUTE_NAME = "driver_route_name";
@@ -125,6 +145,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 				+ KEY_COMPANYNAME + " TEXT" + ")";
 		db.execSQL(CREATE_COMPANY_TABLE);
 
+
+		String CREATE_CO_TYPE_TABLE = "CREATE TABLE " + TABLE_CO_TYPE + "(" + KEY_CO_TYPE_TABLE + " TEXT" + ")";
+		db.execSQL(CREATE_CO_TYPE_TABLE);
+
 		String CREATE_CHG_TABLE = "CREATE TABLE " + TABLE_CHG + "(" + KEY_DATA + " INTEGER," + KEY_TEXT + " TEXT" + ")";
 		db.execSQL(CREATE_CHG_TABLE);
 
@@ -136,7 +160,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		db.execSQL(CREATE_DAILY_ORDER_TABLE);
 
 		String CREATE_CACHEDJOB_TABLE = "CREATE TABLE " + TABLE_CACHEDJOB + "(" + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-				+ KEY_COMPANYID + " TEXT," + KEY_SIGNATURE + " TEXT," + KEY_SIGNATURE_NAME + " TEXT," + KEY_CHG1 + " TEXT," + KEY_CHG2
+				+ KEY_COMPANYID + " TEXT," + KEY_SIGNATURE + " TEXT,"+ KEY_DOCUMENT_SIGN + " TEXT," + KEY_SIGNATURE_NAME + " TEXT," + KEY_CHG1 + " TEXT," + KEY_CHG2
 				+ " TEXT," + KEY_CARTOON1 + " TEXT," + KEY_REDELIVER + " TEXT," + KEY_FROM + " TEXT," + KEY_TO + " TEXT," + KEY_CACHED_DATE
 				+ " TEXT," + KEY_SYSTEM + " TEXT," + KEY_SERV_ID + " TEXT" + ")";
 
@@ -163,6 +187,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		String CREATE_DRIVER_LABEL = "CREATE TABLE " + TABLE_DRIVER_LABEL + "(" + KEY_DRIVER_LABEL_DRIVER_ID + " TEXT,"
 				+ KEY_DRIVER_LABEL_CARTON_NUM + " TEXT," + KEY_DRIVER_LABEL_BARCODE + " TEXT," + KEY_DRIVER_LABEL_CUST_NAME + " TEXT" + ")";
 		db.execSQL(CREATE_DRIVER_LABEL);
+		String CREATE_ORDER_DELIVER = "CREATE TABLE " + TABLE_ORDER_DELIVER + "(" + KEY_ORDER_DELIVER_CARTUN_NUM + " TEXT,"
+				+ KEY_ORDER_DELIVER_ASS1 + " TEXT," + KEY_ORDER_DELIVER_TIMESTAMP + " TEXT,"
+				+ KEY_ORDER_DELIVER_ASS2 + " TEXT," + KEY_ORDER_DELIVER_CO_TYPE + " TEXT" + ")";
+		db.execSQL(CREATE_ORDER_DELIVER);
+
 	}
 
 	// Upgrading database
@@ -180,6 +209,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_DRIVER_ROUTE_TIME_STATUS_DETAILS);
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_COMPANY_REJECTION);
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_DRIVER_LABEL);
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_CO_TYPE);
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_ORDER_DELIVER);
 		onCreate(db);
 	}
 
@@ -206,6 +237,22 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	}
 
 	// Adding new driver label
+	public void addOrderDeliverLabel(OrderDeliver OrderLabel) {
+		SQLiteDatabase db = getWritableDatabase();
+
+		ContentValues values = new ContentValues();
+		// Contact Name
+		values.put(KEY_ORDER_DELIVER_CARTUN_NUM, OrderLabel.getOrderDeliverCartonNum());
+		values.put(KEY_ORDER_DELIVER_ASS1, OrderLabel.getOrderDeliverAss1());
+		values.put(KEY_ORDER_DELIVER_ASS2, OrderLabel.getOrderDeliverAss2());
+		values.put(KEY_ORDER_DELIVER_CO_TYPE, OrderLabel.getOrderDeliverCoType());
+		values.put(KEY_ORDER_DELIVER_TIMESTAMP,OrderLabel.getOrderDeliverTimestamp());
+
+		// Inserting Row
+		db.insert(TABLE_ORDER_DELIVER, null, values);
+		// //db.close();
+	}
+	//add Order deliver to save for 1 day
 	public void addDriverLabel(DriverLabel driverLabel) {
 		SQLiteDatabase db = getWritableDatabase();
 
@@ -266,6 +313,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		db.insert(TABLE_DRIVER_ROUTE_TIME_STATUS_DETAILS, null, values);
 		// db.close();
 	}
+	// Adding COTYPE
+	public void addCo_type(String co_type) {
+		SQLiteDatabase db = this.getWritableDatabase();
+
+
+		//int size = co_type.size();
+		//	Log.e("co_type_list","size "+size);
+		ContentValues values = new ContentValues();
+		/*for(int temp=0;temp<size;temp++)
+		{*/
+
+		values.put(KEY_CO_TYPE_TABLE, co_type); // Contact Name
+
+		// Inserting Row
+		db.insert(TABLE_CO_TYPE, null, values);
+		//}
+
+		//db.close(); // Closing database connection
+	}
+
+
 
 	// Adding new contact
 	public void addData(Login login) {
@@ -336,7 +404,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		ContentValues values = new ContentValues();
 		// Contact Name
 		values.put(KEY_CARTON_NUM, dailyOrder.getCartonNumText()); // Contact
-																	// Phone
+		// Phone
 		values.put(KEY_CO_TYPE, dailyOrder.getCoTypeText());
 
 		// Inserting Row
@@ -349,7 +417,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		try {
 			ContentValues values = new ContentValues();
 			values.put(KEY_SIGNATURE_NAME, cachedjob.getSignatureName());// Contact
-																			// Phone
+			// Phone
 			values.put(KEY_COMPANYID, cachedjob.getCompanyID());
 			values.put(KEY_CHG1, cachedjob.getChg1());
 			values.put(KEY_CHG2, cachedjob.getChg2());
@@ -359,6 +427,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 			values.put(KEY_FROM, cachedjob.getFrom());
 			values.put(KEY_SIGNATURE, cachedjob.getEncodeSign());
 			values.put(KEY_CACHED_DATE, cachedjob.getCachedDate());
+			values.put(KEY_DOCUMENT_SIGN,cachedjob.getDocumentData());
 
 			values.put(KEY_SYSTEM, Constants.SYSTEM_VALUE);
 			values.put(KEY_SERV_ID, Constants.SERVID_VALUE);
@@ -419,7 +488,18 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 		return cursor;
 	}
+	public Cursor get_CO_TYPE_NAME() {
 
+		String selectQuery = "SELECT  * FROM " + TABLE_CO_TYPE;
+
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor cursor = db.rawQuery(selectQuery, null);
+
+		// if (db != null)
+		// db.close();
+
+		return cursor;
+	}
 	public Cursor getCartonNunber(String CartonNunber) {
 
 		String selectQuery = "SELECT  * FROM " + TABLE_DAILY_ORDER + " WHERE carton_num='" + CartonNunber + "'";
@@ -459,6 +539,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		return cursor;
 	}
 
+	public Cursor getORDER_DELIVER(String cartun_num,String Ass1,String Ass2,String co_type) {
+
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor c;
+		c = db.rawQuery("select * from order_deliver where carton_num ='" + cartun_num + "' and ass1='" + Ass1 +"' and ass2='" + Ass2 + "' and co_type='" + co_type + "'", null);
+		return c;
+
+	}
 	public Company getCompany() {
 		String selectQuery = "SELECT  * FROM " + TABLE_COMPANY;
 
@@ -626,6 +714,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 						cachedjob.setCachedDate(cursor.getString(cursor.getColumnIndex(KEY_CACHED_DATE)));
 						cachedjob.setSystem(cursor.getString(cursor.getColumnIndex(KEY_SYSTEM)));
 						cachedjob.setServId(cursor.getString(cursor.getColumnIndex(KEY_SERV_ID)));
+						cachedjob.setDocumentData(cursor.getString(cursor.getColumnIndex(KEY_DOCUMENT_SIGN)));
 
 						cachedjobs.add(cachedjob);
 					} catch (Exception e) {
@@ -655,7 +744,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 			do {
 				Login login = new Login();
 				login.setID(Integer.parseInt(cursor.getString(0))); // Contact
-																	// Phone
+				// Phone
 				login.setDriverID((cursor.getString(1)));
 				login.setuserName((((cursor.getString(2)))));
 				login.setPassword(((cursor.getString(3))));
@@ -731,7 +820,29 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		// return contact list
 		return cartonList;
 	}
+	public List<String> get_CO_TYPE() {
+		List<String> co_type = new ArrayList<String>();
+		// Select All Query
+		String selectQuery = "SELECT  * FROM " + TABLE_CO_TYPE;
 
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor cursor = db.rawQuery(selectQuery, null);
+
+		// looping through all rows and adding to list
+		if (cursor.moveToFirst()) {
+			do {
+				// Adding contact to list
+				co_type.add(cursor.getString(0));
+			} while (cursor.moveToNext());
+
+		}
+
+		// if (db != null)
+		// db.close();
+
+		// return contact list
+		return co_type;
+	}
 	public List<String> getAllCartonCoType() {
 		List<String> cartonList = new ArrayList<String>();
 		// Select All Query
@@ -955,6 +1066,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		deleteAll(TABLE_DAILY_ORDER);
 	}
 
+	public void deleteMUST_CO_TYPE() {
+		deleteAll(TABLE_CO_TYPE);
+	}
 	public int getProfilesCount() {
 		Cursor cursor = null;
 		try {
@@ -1080,5 +1194,20 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 			// if (db != null)
 			// db.close();
 		}
+	}
+
+
+	public void deleteOlder1Day(String carton_num)
+	{
+		SQLiteDatabase db = this.getWritableDatabase();
+		try {
+			db.delete(TABLE_ORDER_DELIVER, KEY_CARTON_NUM + "=?", new String[] { carton_num });
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			// if (db != null)
+			// db.close();
+		}
+
 	}
 }

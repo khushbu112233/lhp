@@ -22,7 +22,7 @@ public class Constants {
 	
 	public static final String SYSTEM_VALUE = "";
 	public static final String SERVID_VALUE = "";
-	
+	public static String PREF_ISDELETE = "isDelete";
 	public static final String APP_GROUP_PHOTO = "com.htech.groupphoto";
 	public static final String APP_ROUTE_APP = "com.targa.merapp";
 	

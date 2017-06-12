@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/txt_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Preview"
+        android:visibility="visible"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/txt_preview"
+        android:background="#F7F7F7"/>
+
+    <RelativeLayout
+        android:id="@+id/actionbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_preview"
+        >
+
+
+        <TextView
+            android:id="@+id/txt_rescan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Rescan"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_ling_01"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/txt_rescan"
+            android:background="#F7F7F7" />
+
+        <TextView
+            android:id="@+id/txt_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_below="@+id/view_ling_01"
+            android:text="Clear"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+  </RelativeLayout>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar2"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+

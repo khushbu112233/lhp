@@ -44,7 +44,7 @@
                     android:drawableRight="@drawable/driver_id"
                     android:gravity="center_vertical"
                     android:hint="@string/edittext_txt_hint"
-                    android:inputType="number" />
+                    android:inputType="text" />
             </LinearLayout>
 
             <TextView

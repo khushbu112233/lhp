@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/changepwdimg_margin_top"
             android:contentDescription="@dimen/login_margin_left"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_launcher1" />
 
         <TextView
             android:id="@+id/change_pwd_textview"

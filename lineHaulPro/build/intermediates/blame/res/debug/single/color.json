@@ -1,54 +1,54 @@
 [
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/switch_thumb_material_light.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/abc_secondary_text_material_light.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/1db8dfa76d3897a2e5d1b44838762b67d660c9f7/output/res/color/common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/color/common_google_signin_btn_text_dark.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/abc_search_url_text.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/1db8dfa76d3897a2e5d1b44838762b67d660c9f7/output/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/abc_secondary_text_material_dark.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/1db8dfa76d3897a2e5d1b44838762b67d660c9f7/output/res/color/common_plus_signin_btn_text_light.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/color/common_plus_signin_btn_text_dark.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/abc_search_url_text.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/color/common_google_signin_btn_text_light.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/color/common_plus_signin_btn_text_light.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/1db8dfa76d3897a2e5d1b44838762b67d660c9f7/output/res/color/common_plus_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/abc_primary_text_material_light.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/abc_primary_text_material_dark.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/switch_thumb_material_dark.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/home/aipxperts/Khusbhu/LHP/lineHaulPro/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/color/abc_primary_text_disable_only_material_light.xml"
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/color/abc_primary_text_material_light.xml"
     }
 ]
