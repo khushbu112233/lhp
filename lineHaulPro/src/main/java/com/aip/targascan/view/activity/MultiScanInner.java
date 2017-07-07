@@ -178,7 +178,7 @@ public class MultiScanInner extends RoboActivity {
     private List<String> mBarcodeImageValue;
     ArrayList<Co_type> co_type_list=new ArrayList<>();
     String db_carton_num="",db_ass1="",db_ass2="",db_co_type="",old_timestamp="";
-
+    boolean isCaptureCarton=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -200,7 +200,9 @@ public class MultiScanInner extends RoboActivity {
         });
         if (SharedPrefrenceUtil.getPrefrence(activity, Constants.PREF_SELECTED_URL_NAME, "").equalsIgnoreCase("YCOL")) {
 
-
+/**
+ * this is api for master company one and if master company one then must scan document .
+ */
             if (Util.isNetAvailable(activity)) {
                 new GetMustScanCoType(activity, false, new ICallback() {
 
@@ -326,7 +328,9 @@ public class MultiScanInner extends RoboActivity {
                             Log.e("delete", "delete");
                         }
                     }
-
+                    /**
+                     * check in database and after check i add entry in db and order .
+                     */
                     if (!db_carton_num.equalsIgnoreCase("") && !db_ass1.equalsIgnoreCase("") && !db_ass2.equalsIgnoreCase("") && !db_co_type.equalsIgnoreCase("")) {
                         if (db_carton_num.equalsIgnoreCase(mCartoonsText.get(0).getText().toString()) && db_ass1.equalsIgnoreCase(cachedjob.getChg1()) && db_ass2.equalsIgnoreCase(cachedjob.getChg2()) && db_co_type.equalsIgnoreCase(Pref.getValue(MultiScanInner.this, "co_typek", ""))) {
                             Toast.makeText(MultiScanInner.this, "You may not submit the same accessorial for this order twice, please un-selected them", Toast.LENGTH_LONG).show();
@@ -339,9 +343,11 @@ public class MultiScanInner extends RoboActivity {
 
                             for (int i = 0; i < mCartoonsType.size(); i++) {
                                 if (mBarcodeImage.get(i).length() < 1 && mBarcodeImageValue.get(i).equals("Rejected")) {
-                                    Toast.makeText(activity, "Please capture photo of all cartons", Toast.LENGTH_LONG).show();
-                                    flag = 1;
-                                    break;
+                                    if(isCaptureCarton) {
+                                        flag = 1;
+                                        Toast.makeText(activity, "Please capture photo of all cartons", Toast.LENGTH_LONG).show();
+                                        break;
+                                    }
                                 }/*else if(mBarcodeImageValue.get(i).equals("edix")||mBarcodeImageValue.get(i).equals("front")||mBarcodeImageValue.get(i).equals("clear")) {
                             if (encodedString1.equalsIgnoreCase("")) {
                                 L.alert(activity, Constants.APP_NAME, getResources().getText(R.string.multiscan_targascan_errormsg_document).toString());
@@ -350,13 +356,23 @@ public class MultiScanInner extends RoboActivity {
                         }
 */
                                 try {
-                                    if (mBarcodeImageValue.get(i).equals("Rejected")) {
-                                        JSONObject object = new JSONObject();
-                                        object.put("driver_id", database.getContact().getDriverID());
-                                        object.put("carton_num", mCartoonsText.get(i).getText().toString());
-                                        object.put("barcode", mBarcodeImage.get(i));
-                                        object.put("cust_name", editsignature.getText());
-                                        UploadArrayData.put(object);
+                                    if(isCaptureCarton) {
+                                        if (mBarcodeImageValue.get(i).equals("Rejected")) {
+                                            JSONObject object = new JSONObject();
+                                            object.put("driver_id", database.getContact().getDriverID());
+                                            object.put("carton_num", mCartoonsText.get(i).getText().toString());
+                                            object.put("barcode", mBarcodeImage.get(i));
+                                            object.put("cust_name", editsignature.getText());
+                                            UploadArrayData.put(object);
+                                        }else {
+                                            try {
+                                                UploadData.put(mCartoonsText.get(i).getText().toString(), mCartoonsType.get(i).getSelectedItem()
+                                                        .toString());
+                                            } catch (JSONException e) {
+                                                // TODO Auto-generated catch block
+                                                e.printStackTrace();
+                                            }
+                                        }
                                     } else {
                                         try {
                                             UploadData.put(mCartoonsText.get(i).getText().toString(), mCartoonsType.get(i).getSelectedItem()
@@ -373,6 +389,7 @@ public class MultiScanInner extends RoboActivity {
                             }
 
                             if (flag == 1) {
+
                                 return;
                             }
 
@@ -414,9 +431,13 @@ public class MultiScanInner extends RoboActivity {
 
                         for (int i = 0; i < mCartoonsType.size(); i++) {
                             if (mBarcodeImage.get(i).length() < 1 && mBarcodeImageValue.get(i).equals("Rejected")) {
-                                Toast.makeText(activity, "Please capture photo of all cartons", Toast.LENGTH_LONG).show();
-                                flag = 1;
-                                break;
+                                if(isCaptureCarton) {
+                                    Toast.makeText(activity, "Please capture photo of all cartons", Toast.LENGTH_LONG).show();
+                                    flag = 1;
+                                    break;
+                                }
+
+
                             }/*else if(mBarcodeImageValue.get(i).equals("edix")||mBarcodeImageValue.get(i).equals("front")||mBarcodeImageValue.get(i).equals("clear")) {
                             if (encodedString1.equalsIgnoreCase("")) {
                                 L.alert(activity, Constants.APP_NAME, getResources().getText(R.string.multiscan_targascan_errormsg_document).toString());
@@ -425,13 +446,24 @@ public class MultiScanInner extends RoboActivity {
                         }
 */
                             try {
-                                if (mBarcodeImageValue.get(i).equals("Rejected")) {
-                                    JSONObject object = new JSONObject();
-                                    object.put("driver_id", database.getContact().getDriverID());
-                                    object.put("carton_num", mCartoonsText.get(i).getText().toString());
-                                    object.put("barcode", mBarcodeImage.get(i));
-                                    object.put("cust_name", editsignature.getText());
-                                    UploadArrayData.put(object);
+                                if(isCaptureCarton)
+                                {
+                                    if (mBarcodeImageValue.get(i).equals("Rejected")) {
+                                        JSONObject object = new JSONObject();
+                                        object.put("driver_id", database.getContact().getDriverID());
+                                        object.put("carton_num", mCartoonsText.get(i).getText().toString());
+                                        object.put("barcode", mBarcodeImage.get(i));
+                                        object.put("cust_name", editsignature.getText());
+                                        UploadArrayData.put(object);
+                                    }else {
+                                        try {
+                                            UploadData.put(mCartoonsText.get(i).getText().toString(), mCartoonsType.get(i).getSelectedItem()
+                                                    .toString());
+                                        } catch (JSONException e) {
+                                            // TODO Auto-generated catch block
+                                            e.printStackTrace();
+                                        }
+                                    }
                                 } else {
                                     try {
                                         UploadData.put(mCartoonsText.get(i).getText().toString(), mCartoonsType.get(i).getSelectedItem()
@@ -791,9 +823,6 @@ public class MultiScanInner extends RoboActivity {
 
                         }
 
-
-
-
                       /*  Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                         //   intent.putExtra(MediaStore.EXTRA_OUTPUT, mImageUri);
                         startActivityForResult(intent, REQUEST_CODE1);*/
@@ -1001,11 +1030,11 @@ public class MultiScanInner extends RoboActivity {
 
             custom_lin.setPadding(20, 50, 20, 50);
 
-            List<String> cmpList = database.getAllCompany();
+            final List<String> cmpList = database.getAllCompany();
             cmpList.remove("Select Company");
             cmpList.add(0, "Unknown");
 
-            List<DailyOrder> DailyOrderList = database.getAllDailyOrder();
+            final List<DailyOrder> DailyOrderList = database.getAllDailyOrder();
             List<String> DailyOrderCartonNunberList = database.getAllCartonNumber();
 
             List<String> DailyOrderCartonCoTypeList = database.getAllCartonCoType();
@@ -1043,10 +1072,13 @@ public class MultiScanInner extends RoboActivity {
                     if (DailyOrderList.get(counter).getCartonNumText().endsWith(jsonObject.getString(key))) {
                         if (cmpList.contains(DailyOrderList.get(counter).getCoTypeText())) {
                             spinner.setSelection(cmpList.indexOf(DailyOrderList.get(counter).getCoTypeText()));
+                            Pref.setValue(MultiScanInner.this,"co_typek",cmpList.indexOf(DailyOrderList.get(counter).getCoTypeText()));
+
                         }
                         break;
                     }
                 }
+
 
                 // EditText editText = new
                 // EditText(MultiScanInner.this);
@@ -1074,6 +1106,7 @@ public class MultiScanInner extends RoboActivity {
                         if (cursor.getString(cursor.getColumnIndex("co_type")).equalsIgnoreCase("Unknown")) {
                             scanData.setText("Rejected");
                             mBarcodeImageValue.add("Rejected");
+                            isCaptureCarton=false;
                         }/*else if(cursor.getString(cursor.getColumnIndex("co_type")).equalsIgnoreCase("edix")||cursor.getString(cursor.getColumnIndex("co_type")).equalsIgnoreCase("front")||cursor.getString(cursor.getColumnIndex("co_type")).equalsIgnoreCase("clear")){
                             mBarcodeImageValue.add(cursor.getString(cursor.getColumnIndex("co_type")));
                            // mBarcodeImageValue.add("Accepted");
@@ -1085,6 +1118,7 @@ public class MultiScanInner extends RoboActivity {
                     } else {
                         scanData.setText("Rejected");
                         mBarcodeImageValue.add("Rejected");
+                        isCaptureCarton=false;
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -1117,10 +1151,16 @@ public class MultiScanInner extends RoboActivity {
                 mBarcodeImage.add("");
                 // custom_lin.addView(mView, i + 1);
 
+                /**
+                 * ask for select company and not to need cartoon photo when rejected then ask for capture cartoon number
+                 */
                 if (MasterCompanyEditable) {
                     custom_lin.addView(spinner, i + 1);
+
+                    isCaptureCarton=false;
                 } else {
                     custom_lin.addView(mView, i + 1);
+                    isCaptureCarton=true;
                 }
 
                 i = i + 2;
@@ -1524,6 +1564,10 @@ public class MultiScanInner extends RoboActivity {
         return scaledBitmap;
 
     }
+
+    /**
+     * add order in database for not add same order with in 1  day
+     */
     private void add_db_order_deliver_1_day()
     {
         Long tsLong = System.currentTimeMillis()/1000;
@@ -1550,7 +1594,7 @@ public class MultiScanInner extends RoboActivity {
                 Log.e("match","match"+DailyCo_TYPE_List.get(co));
                 if(Pref.getValue(MultiScanInner.this,"co_typek","").equalsIgnoreCase(DailyCo_TYPE_List.get(co)))
                 {
-                    Toast.makeText(MultiScanInner.this, "cotype"+DailyCo_TYPE_List.get(co), Toast.LENGTH_SHORT).show();
+                    //  Toast.makeText(MultiScanInner.this, "cotype"+DailyCo_TYPE_List.get(co), Toast.LENGTH_SHORT).show();
                     is_match=true;
                 }
             }
@@ -1601,7 +1645,7 @@ public class MultiScanInner extends RoboActivity {
                 Log.e("match","match"+DailyCo_TYPE_List.get(co));
                 if(Pref.getValue(MultiScanInner.this,"co_typek","").equalsIgnoreCase(DailyCo_TYPE_List.get(co)))
                 {
-                    Toast.makeText(MultiScanInner.this, "cotype"+DailyCo_TYPE_List.get(co), Toast.LENGTH_SHORT).show();
+                    // Toast.makeText(MultiScanInner.this, "cotype"+DailyCo_TYPE_List.get(co), Toast.LENGTH_SHORT).show();
 
                     is_match=true;
                 }
@@ -1666,11 +1710,11 @@ public class MultiScanInner extends RoboActivity {
             params.add(JsonKey.MUTISCAN_old.system, cachedjob.getSystem());
             params.add(JsonKey.MUTISCAN_old.to, cachedjob.getTo());
             params.add(JsonKey.MUTISCAN_old.from, cachedjob.getFrom());
-            // params.add(JsonKey.MUTISCAN.documentData, cachedjob.getDocumentData());
+            params.add(JsonKey.MUTISCAN.documentData, cachedjob.getDocumentData());
             String authKey = SharedPrefrenceUtil.getPrefrence(getApplicationContext(), Constants.PREF_AUTH_KEY, null);
             params.add(JsonKey.AUTH_KEY, authKey);
 
-            doUpload1(params);
+            doUpload(params);
         }
     }
 
