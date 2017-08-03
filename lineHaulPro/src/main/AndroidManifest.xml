@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.aip.targascan"
-    android:versionCode="24"
-    android:versionName="3.4">
+    android:versionCode="25"
+    android:versionName="3.5">
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -138,6 +138,7 @@
             android:name=".view.activity.DashboardActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
             android:name=".view.activity.MultiScanInner"
@@ -203,6 +204,16 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
 
+        <activity
+            android:name=".view.activity.OrderListDisplayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name=".view.activity.ProductDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="c4f7f02b4bbc047ab2260be81785202ec63c9c63" />

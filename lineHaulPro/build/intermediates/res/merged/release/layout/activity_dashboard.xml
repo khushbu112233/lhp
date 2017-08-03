@@ -7,13 +7,47 @@
     <include
         android:id="@+id/header"
         layout="@layout/header" />
+    <LinearLayout
+        android:id="@+id/ll_cartun_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/search_dashboard_border">
+        <EditText
+            android:id="@+id/search_cartun"
+            android:layout_width="0dp"
+            android:layout_weight="0.90"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@null"
+            android:gravity="left|center"
+            android:textColor="#656565"
+            android:textSize="15sp"
+            android:textColorHint="#b1abab"
+            android:imeOptions="actionDone"
+            android:hint="Search for Carton Number"
+            android:inputType="text" />
+        <ImageView
+            android:id="@+id/ivsearch_cartun"
+            android:layout_width="0dp"
+            android:layout_weight="0.10"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/search_carton_num" />
 
+    </LinearLayout>
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/imgAppWeb"
-        android:layout_below="@+id/header" >
+        android:layout_below="@+id/ll_cartun_search" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -366,6 +400,8 @@
                 <!-- android:textSize="@dimen/dashboard_text_size" /> -->
                 <!-- </LinearLayout> -->
             </LinearLayout>
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -374,12 +410,16 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:weightSum="1" >
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.33"
                     android:gravity="center"
                     android:orientation="vertical" >
+
+
+
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"

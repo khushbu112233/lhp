@@ -51,6 +51,9 @@ android {
         // but continue the build even when errors are found:
         abortOnError false
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -78,5 +81,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile 'com.android.support:multidex:1.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
     compile project(':scanlibrary')
 }

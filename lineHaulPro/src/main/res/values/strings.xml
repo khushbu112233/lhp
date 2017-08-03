@@ -40,6 +40,7 @@
     <string name="textview_exit">Logout</string>
     <string name="textview_reference">Extra Comments</string>
     <string name="textview_scan_setting">Scan Setting</string>
+    <string name="textview_search">Search</string>
     
     <!-- string for checkout -->
     <string name="reference">Reference</string>
@@ -95,13 +96,13 @@
     </string-array>
 
     <string name="error_server">Server error please try again later.</string>
-    <string name="error_internet">Please check your internet connection</string>
+    <string name="error_internet">Please check your internet connection.</string>
     <string name="offline_login">Internet connection is not available. Do you want to continue with offline mode?</string>
     <string name="validate_startmile">Please enter start mile</string>
     <string name="validate_endmile">Please enter end mile</string>
     <string name="validate_vehiclename">Please enter vahicle name</string>
     <string name="validate_required_field">Required fields can not be empty</string>
-    <string name="offline_checkout">Internet connection is not available.You can not check out in offline mode</string>
+    <string name="offline_checkout">Internet connection is not available.You can not check out in offline mode.</string>
     <string name="force_login">You are not logged in! Please login and try again</string>
     <string name="update_txt_btn">Update</string>
     <string name="title_activity_cached_job">CachedJobActivity</string>

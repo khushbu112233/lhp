@@ -1,6 +1,8 @@
 package com.aip.targascan.view.activity;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.http.Header;
@@ -13,6 +15,8 @@ import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
 import android.R.integer;
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -23,21 +27,34 @@ import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.text.InputType;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.aip.targascan.Adapter.ListCotypeAdapter;
 import com.aip.targascan.R;
+import com.aip.targascan.common.async.ChangepasswordAsync;
 import com.aip.targascan.common.async.CompanyRejectionListAsync;
 import com.aip.targascan.common.async.DriverRouteSubmitAsync;
 import com.aip.targascan.common.async.DriverRouteSubmitBackgroundAsync;
 import com.aip.targascan.common.async.ExportDataAsync;
 import com.aip.targascan.common.async.GetDailyOrdersListAsync;
+import com.aip.targascan.common.async.GetProductDetailAsync;
 import com.aip.targascan.common.async.IResultListner;
 import com.aip.targascan.common.database.DatabaseHandler;
 import com.aip.targascan.common.util.ASyncCheck;
@@ -54,6 +71,7 @@ import com.aip.targascan.common.util.Logger;
 import com.aip.targascan.common.util.RestClient;
 import com.aip.targascan.common.util.SharedPrefrenceUtil;
 import com.aip.targascan.common.util.Util;
+import com.aip.targascan.model.ProductDetail;
 import com.aip.targascan.vo.Cachedjob;
 import com.aip.targascan.vo.CheckOutDataVO;
 import com.aip.targascan.vo.CompanyRejection;
@@ -119,9 +137,13 @@ public class DashboardActivity extends RoboActivity {
     @InjectView(R.id.ll_scan)
     LinearLayout ll_scan;
 
+    @InjectView(R.id.search_cartun)
+    EditText search_cartun;
     @InjectView(R.id.imgAppWeb)
     ImageView imgAppWeb;
 
+    /* @InjectView(R.id.ivsearch)
+     ImageView ivsearch;*/
     @InjectView(R.id.ivscan)
     ImageView ivscan;
 
@@ -131,7 +153,12 @@ public class DashboardActivity extends RoboActivity {
     @InjectView(R.id.txt_logout)
     TextView txt_logout;
 
+    @InjectView(R.id.ivsearch_cartun)
+    ImageView ivsearch_cartun;
 
+
+    /* @InjectView(R.id.txt_search)
+     TextView txt_search;*/
     private DashboardActivity activity;
     private DatabaseHandler databaseHandler;
     private int count;
@@ -139,7 +166,12 @@ public class DashboardActivity extends RoboActivity {
     int is_Scan_enable=0;
     private boolean isNewVersionAvailable = false;
     private AlertDialog UpdateDialog;
+    boolean isDuplicate=false;
 
+    ArrayList<ProductDetail> productDetailArrayList1 = new ArrayList<ProductDetail>();
+    public ArrayList<ProductDetail> productDetailArrayList=new ArrayList<>();
+
+    ArrayList<String> products = new ArrayList<String>();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -295,6 +327,8 @@ public class DashboardActivity extends RoboActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+
+
             }
         });
         ll_scan.setOnClickListener(new OnClickListener() {
@@ -400,6 +434,39 @@ public class DashboardActivity extends RoboActivity {
                 }
             }
         });
+
+        ivsearch_cartun.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!search_cartun.getText().toString().trim().equalsIgnoreCase("")) {
+                    if (Util.isNetAvailable(activity)) {
+                        search_cartun_number();
+                    } else {
+                        L.alert(activity, activity.getResources().getString(R.string.error_internet));
+                    }
+
+                }
+            }
+        });
+        search_cartun.setOnEditorActionListener(
+                new EditText.OnEditorActionListener() {
+                    @Override
+                    public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
+                        if (actionId == EditorInfo.IME_ACTION_DONE) {
+                            if(!search_cartun.getText().toString().trim().equalsIgnoreCase("")) {
+                                if (Util.isNetAvailable(activity)) {
+                                    search_cartun_number();
+                                } else {
+                                    L.alert(activity, activity.getResources().getString(R.string.error_internet));
+                                }
+                            }
+                        }
+
+                        return false;
+                    }
+
+
+                });
 
         lldeletecachedjob.setOnClickListener(new OnClickListener() {
 
@@ -528,6 +595,19 @@ public class DashboardActivity extends RoboActivity {
         // }
         // }
         // });
+      /*  ll_search.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent i = new Intent(activity, OrderListDisplayActivity.class);
+                    activity.startActivity(i);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+        });*/
 
         llreference.setOnClickListener(new OnClickListener() {
 
@@ -652,7 +732,280 @@ public class DashboardActivity extends RoboActivity {
         }
 
     }
+    public void search_cartun_number()
+    {
+        productDetailArrayList.clear();
+        productDetailArrayList1.clear();
+        products.clear();
+        GetProductDetailAsync async = new GetProductDetailAsync(activity, search_cartun.getText().toString(), new ICallback() {
 
+            @Override
+            public void run(Object result) {
+                if(result == null)
+                {
+                    L.alert(activity, "Server error! Please try again later.");
+                    return;
+                }
+                String str = result.toString();
+                JSONObject json;
+                try {
+                    json = new JSONObject(str);
+                    String code =json.getString("code");
+                    if(code.equalsIgnoreCase("200"))
+                    {
+                        JSONArray jsonArray_data=json.getJSONArray("data");
+                        ProductDetail[] productDetails =new ProductDetail[jsonArray_data.length()];
+                        for(int i=0;i<jsonArray_data.length();i++)
+                        {
+                            productDetails[i]=new ProductDetail();
+                            if(!jsonArray_data.getJSONObject(i).getString("date").equalsIgnoreCase("null")) {
+                                productDetails[i].setDate(jsonArray_data.getJSONObject(i).getString("date"));
+                            }else
+                            {
+                                productDetails[i].setDate("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("carton_num").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setCarton_num1(jsonArray_data.getJSONObject(i).getString("carton_num"));
+
+                            }else
+                            {
+                                productDetails[i].setCarton_num1("");
+
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("record_created").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setRecord_created(jsonArray_data.getJSONObject(i).getString("record_created"));
+
+                            }else
+                            {
+                                productDetails[i].setRecord_created("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("driver_id").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setDriver_id1(jsonArray_data.getJSONObject(i).getString("driver_id"));
+
+                            }else
+                            {
+                                productDetails[i].setDriver_id1("");
+
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("cust_name").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setCust_name(jsonArray_data.getJSONObject(i).getString("cust_name"));
+
+                            }else
+                            {
+                                productDetails[i].setCust_name("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("work_order_num").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setWork_order_num(jsonArray_data.getJSONObject(i).getString("work_order_num"));
+                            }else
+                            {
+                                productDetails[i].setWork_order_num("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("delivery_name").equalsIgnoreCase("null")) {
+                                productDetails[i].setDelivery_name(jsonArray_data.getJSONObject(i).getString("delivery_name"));
+                            }else
+                            {
+                                productDetails[i].setDelivery_name("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("delivery_address").equalsIgnoreCase("null")) {
+                                productDetails[i].setDelivery_address(jsonArray_data.getJSONObject(i).getString("delivery_address"));
+                            }else
+                            {
+                                productDetails[i].setDelivery_address("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("zip").equalsIgnoreCase("null")) {
+                                productDetails[i].setZip(jsonArray_data.getJSONObject(i).getString("zip"));
+                            }else
+                            {
+                                productDetails[i].setZip("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("quantity").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setQuantity(jsonArray_data.getJSONObject(i).getString("quantity"));
+                            }else
+                            {
+                                productDetails[i].setQuantity("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("weight").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setWeight(jsonArray_data.getJSONObject(i).getString("weight"));
+                            }else
+                            {
+                                productDetails[i].setWeight("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("co_type").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setCo_type1(jsonArray_data.getJSONObject(i).getString("co_type"));
+                            }else
+                            {
+                                productDetails[i].setCo_type1("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("redeliver").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setRedeliver1(jsonArray_data.getJSONObject(i).getString("redeliver"));
+                            }else
+                            {
+                                productDetails[i].setRedeliver1("");
+
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("assigned_route").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setAssigned_route(jsonArray_data.getJSONObject(i).getString("assigned_route"));
+                            }else
+                            {
+                                productDetails[i].setAssigned_route("");
+
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("osd").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setOsd(jsonArray_data.getJSONObject(i).getString("osd"));
+                            }else
+                            {
+                                productDetails[i].setOsd("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("comment").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setComment(jsonArray_data.getJSONObject(i).getString("comment"));
+                            }else
+                            {
+                                productDetails[i].setComment("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("pupname").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setPupname(jsonArray_data.getJSONObject(i).getString("pupname"));
+                            }else
+                            {
+                                productDetails[i].setPupname("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("pupaddress").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setPupaddress(jsonArray_data.getJSONObject(i).getString("pupaddress"));
+                            }else
+                            {
+                                productDetails[i].setPupaddress("");
+                            }
+
+                            if(!jsonArray_data.getJSONObject(i).getString("pupcity").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setPupcity(jsonArray_data.getJSONObject(i).getString("pupcity"));
+                            }else
+                            {
+                                productDetails[i].setPupcity("");
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("pupzip").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setPupzip(jsonArray_data.getJSONObject(i).getString("pupzip"));
+
+                            }else
+                            {
+                                productDetails[i].setPupzip("");
+
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("city").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setCity(jsonArray_data.getJSONObject(i).getString("city"));
+
+
+                            }else
+                            {
+                                productDetails[i].setCity("");
+
+
+                            }
+                            if(!jsonArray_data.getJSONObject(i).getString("pickup").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setPickup(jsonArray_data.getJSONObject(i).getString("pickup"));
+
+                            }else
+                            {
+                                productDetails[i].setPickup("");
+                            }
+
+                            if(!jsonArray_data.getJSONObject(i).getString("destination").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setDestination(jsonArray_data.getJSONObject(i).getString("destination"));
+
+                            }else
+                            {
+                                productDetails[i].setDestination("");
+                            }
+
+
+                            productDetailArrayList.add(productDetails[i]);
+                        }
+//                                            Log.e("#detail RESPONSE#",""+productDetailArrayList.get(0).getCarton_num1());
+                        if(productDetailArrayList.size()>0)
+                        {
+                            if(productDetailArrayList.size()==1)
+                            {
+
+                                Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
+                                Bundle bundle = new Bundle();
+                                bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
+                                intent.putExtras(bundle);
+                                intent.putExtra("warning","0");
+                                startActivity(intent);
+
+                            }else if(productDetailArrayList.size()>1)
+                            {
+                                products.clear();
+                                for(int i=0;i<productDetailArrayList.size();i++)
+                                {
+                                    products.add(productDetailArrayList.get(i).getCo_type1());
+                                }
+
+                                String value = products.get(0);
+                                Log.e("value",""+products);
+                                if(products.size()>1) {
+                                    for (int i = 1; i < products.size(); i++) {
+                                        if (products.get(i).equalsIgnoreCase(value))
+                                        {
+                                            isDuplicate=true;
+                                        }else
+                                        {
+                                            isDuplicate=false;
+                                        }
+                                    }
+                                }
+                                if(!isDuplicate) {
+                                    dialog(products);
+                                }else
+                                {
+                                    Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
+                                    Bundle bundle = new Bundle();
+                                    bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
+                                    intent.putExtras(bundle);
+                                    intent.putExtra("warning","1");
+                                    startActivity(intent);
+
+                                }
+                            }
+                        }else
+                        {
+
+                            Toast.makeText(DashboardActivity.this,"No record found for carton number "+search_cartun.getText().toString()+".",Toast.LENGTH_LONG).show();
+                            View view = getCurrentFocus();
+                            if (view != null) {
+                                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                            }
+                        }
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+
+
+            }
+
+        });
+        async.execute();
+    }
     private void UploadDriverLabel(Cursor cursor) {
         // TODO Auto-generated method stub
         try {
@@ -950,6 +1303,11 @@ public class DashboardActivity extends RoboActivity {
     @Override
     protected void onResume() {
         super.onResume();
+
+        search_cartun.setText("");
+        products.clear();
+        productDetailArrayList.clear();
+        productDetailArrayList1.clear();
         checkApp();
 
         if (isRouteApp) {
@@ -1112,5 +1470,49 @@ public class DashboardActivity extends RoboActivity {
         }
 
     }
+    private void dialog(ArrayList<String> cartuns) {
+        // custom dialog
 
+        final Dialog dialog = new Dialog(DashboardActivity.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.cotype_detail_dialog_layout);
+        dialog.setCanceledOnTouchOutside(false);
+        ImageView imgcancel = (ImageView) dialog.findViewById(R.id.imgcancel);
+        TextView txt_des = (TextView)dialog.findViewById(R.id.txt_des);
+        ListView list_co_Type = (ListView) dialog.findViewById(R.id.list_co_Type);
+        txt_des.setText("Carton number "+search_cartun.getText().toString()+" available under multiple co type.  Select one to view carton details.");
+        ListCotypeAdapter adapter = new ListCotypeAdapter(DashboardActivity.this,cartuns);
+        list_co_Type.setAdapter(adapter);
+        productDetailArrayList1.clear();
+        list_co_Type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                for(int j = 0;j<productDetailArrayList.size();j++)
+                {
+                    if(j==i)
+                    {
+                        productDetailArrayList1.add(productDetailArrayList.get(j));
+                    }
+                }
+                Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList1);
+                intent.putExtras(bundle);
+                intent.putExtra("warning","0");
+                startActivity(intent);
+                dialog.dismiss();
+                products.clear();
+            }
+        });
+        imgcancel.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+                products.clear();
+            }
+        });
+        dialog.show();
+
+    }
 }

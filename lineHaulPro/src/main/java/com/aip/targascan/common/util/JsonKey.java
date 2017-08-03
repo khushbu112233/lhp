@@ -33,6 +33,8 @@ public class JsonKey {
 	private static final String URL_GET_DAILY_ORDERS = "getDailyOrders";
 	private static final String URL_CHECK_CARTON_NUMBER = "checkCartonNumbers";
 	private static final String URL_MULTI_SCAN_CO_TYPE_WITH_DOCUMENT = "multiScanCoTypeWithDocument";
+	private static final String URL_GET_CARTON_DETAILS = "getCartonDetails";
+
 	//public static final String URL_GET_DOMAINS = "http://domains.linehaulpro.com/provide_domain_names.php?passphrase=0l1oepi1o71v5";
 
 	public static final String URL_GET_DOMAINS = "https://api.yourcargoonline.com/provide_domain_names.php?passphrase=0l1oepi1o71v5";
@@ -148,6 +150,9 @@ public class JsonKey {
 		return MAIN_URL + URL_DRIVER_DETAIL;
 	}
 
+	public static String getCARTON_DETAILS_URL() {
+		return MAIN_URL + URL_GET_CARTON_DETAILS;
+	}
 	public static final String KEY_DRIVER_ID = "driverId";
 	public static final String KEY_USERNAME = "username";
 	public static final String KEY_PASSWORD = "password";
@@ -159,6 +164,7 @@ public class JsonKey {
 	public static final String KEY_VEHICLENAME = "vehicleName";
 	public static final String KEY_ENDMILES = "endMiles";
 	public static final String KEY_CHECKOUT = "checkOut";
+	public static final String KEY_carton_num = "carton_num";
 
 	// parameter for multiscaninner
 	public static final String KEY_SIGNATURENAME = "signatureName";

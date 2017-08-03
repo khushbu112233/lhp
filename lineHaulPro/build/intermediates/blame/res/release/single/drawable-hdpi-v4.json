@@ -8,6 +8,14 @@
         "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/scanlibrary/build/intermediates/bundles/default/res/drawable-hdpi-v4/ic_enhamce_image.png"
     },
     {
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/drawable-hdpi-v4/blue_curve.xml",
+        "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/drawable-hdpi/blue_curve.xml"
+    },
+    {
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/drawable-hdpi-v4/white_curve.xml",
+        "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/drawable-hdpi/white_curve.xml"
+    },
+    {
         "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_image.png",
         "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/scanlibrary/build/intermediates/bundles/default/res/drawable-hdpi-v4/ic_image.png"
     },

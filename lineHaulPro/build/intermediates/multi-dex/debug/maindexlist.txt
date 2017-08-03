@@ -98,6 +98,7 @@ roboguice/inject/SharedPreferencesProvider$PreferencesNameHolder.class
 android/support/v4/widget/SlidingPaneLayout.class
 com/google/android/gms/common/SignInButton.class
 android/support/v4/media/MediaMetadataCompat$TextKey.class
+android/databinding/InverseMethod.class
 android/support/v4/media/VolumeProviderCompatApi21$Delegate.class
 roboguice/activity/RoboTabActivity.class
 android/support/annotation/Keep.class
@@ -152,9 +153,11 @@ com/google/android/gms/common/GooglePlayServicesUtil.class
 android/support/v7/widget/LinearLayoutCompat$DividerMode.class
 com/google/android/gms/location/places/AutocompletePrediction$Substring.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable$ArrowDirection.class
+com/squareup/picasso/RequestCreator.class
 com/google/android/gms/maps/StreetViewPanoramaView.class
 com/google/android/gms/common/api/Scope.class
 android/support/v4/view/ViewCompatJellybeanMr2.class
+com/squareup/picasso/Downloader$Response.class
 android/support/v4/media/session/MediaSessionCompat$Callback.class
 android/support/v7/widget/LinearLayoutCompat.class
 com/aip/targascan/view/activity/DashboardActivity.class
@@ -186,6 +189,7 @@ android/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase.class
 com/google/android/gms/common/internal/ValidateAccountRequest.class
 android/support/v4/view/ViewPager$DecorView.class
 roboguice/test/shadow/ShadowFragment.class
+android/databinding/BindingConversion.class
 android/support/v4/media/MediaBrowserCompat$ConnectionCallback$ConnectionCallbackInternal.class
 roboguice/activity/RoboMapActivity.class
 android/support/annotation/CallSuper.class
@@ -210,6 +214,7 @@ android/support/v4/app/AppOpsManagerCompat.class
 android/support/annotation/FloatRange.class
 android/support/v4/view/ViewPager$MyAccessibilityDelegate.class
 com/google/android/gms/common/internal/zzf.class
+android/databinding/InverseBindingMethods.class
 android/support/annotation/StringDef.class
 android/support/v4/media/RatingCompatKitkat.class
 org/apache/http/entity/mime/content/InputStreamBody.class
@@ -218,6 +223,7 @@ android/support/v4/app/NotificationCompat.class
 android/support/v4/media/session/MediaSessionCompat.class
 com/google/android/gms/common/api/internal/zzb.class
 android/support/v4/media/session/PlaybackStateCompatApi21.class
+android/databinding/InverseBindingMethod.class
 android/support/v4/media/MediaBrowserCompat$MediaItem.class
 android/support/v4/app/FragmentController.class
 android/support/v4/view/ViewCompat$ScrollIndicators.class
@@ -228,6 +234,7 @@ android/support/v4/view/ViewCompatLollipop.class
 android/support/v4/media/MediaBrowserCompat$MediaItem$1.class
 android/support/v4/widget/CursorAdapter.class
 com/google/inject/internal/guava/collect/$BstBalancePolicy.class
+android/databinding/Untaggable.class
 android/support/v4/widget/SimpleCursorAdapter.class
 android/support/v4/view/ViewCompat$JbMr1ViewCompatImpl.class
 com/google/android/gms/auth/GoogleAuthUtil.class
@@ -241,6 +248,7 @@ android/support/annotation/AnimRes.class
 javax/annotation/PropertyKey.class
 android/support/v4/view/KeyEventCompat.class
 android/support/v4/view/ViewCompat$EclairMr1ViewCompatImpl.class
+com/squareup/picasso/Picasso$Builder.class
 com/google/android/gms/location/places/PlaceFilter.class
 android/support/v4/view/ViewPropertyAnimatorCompat.class
 android/support/v4/view/ViewCompat$FocusRealDirection.class
@@ -269,7 +277,9 @@ com/google/inject/internal/guava/collect/$ImmutableEntry.class
 com/google/inject/util/Providers$3.class
 javax/annotation/meta/When.class
 android/support/annotation/BoolRes.class
+android/databinding/InverseBindingAdapter.class
 android/support/v4/media/MediaMetadataCompat.class
+android/databinding/BindingMethod.class
 android/support/v4/view/PagerTitleStrip.class
 io/fabric/sdk/android/services/concurrency/DependsOn.class
 android/support/v4/media/RatingCompat$1.class
@@ -313,6 +323,7 @@ android/support/v4/view/ViewCompatJB.class
 javax/inject/Named.class
 com/google/android/gms/common/GoogleApiAvailability.class
 com/aip/targascan/view/activity/CheckOutDetailActivity.class
+android/databinding/BindingAdapter.class
 android/support/v7/app/ActionBar$NavigationMode.class
 android/support/v7/view/ActionMode.class
 android/support/v4/media/VolumeProviderCompatApi21.class
@@ -355,6 +366,7 @@ javax/annotation/concurrent/NotThreadSafe.class
 android/support/annotation/StyleableRes.class
 android/support/v4/view/ViewPager$LayoutParams.class
 com/google/android/gms/common/internal/zzac.class
+android/databinding/Bindable.class
 com/google/android/gms/internal/zzqu.class
 android/support/annotation/Dimension$Unit.class
 android/support/v4/view/ViewCompatApi24.class
@@ -375,6 +387,7 @@ javax/annotation/ParametersAreNonnullByDefault.class
 android/support/v7/appcompat/R$style.class
 com/google/inject/internal/guava/collect/$BstMutationResult.class
 android/support/v4/view/accessibility/AccessibilityRecordCompat.class
+android/databinding/BindingMethods.class
 android/support/v4/view/ViewConfigurationCompat.class
 com/google/android/gms/location/LocationStatusCodes.class
 android/support/v4/view/ViewCompatICSMr1.class
@@ -383,6 +396,7 @@ com/google/android/gms/maps/MapFragment.class
 roboguice/inject/ContextSingleton.class
 android/support/v4/app/FragmentManager.class
 android/support/annotation/Px.class
+com/squareup/picasso/Picasso.class
 android/support/annotation/AttrRes.class
 com/google/android/gms/location/places/internal/PlaceLocalization.class
 com/google/android/gms/common/data/AbstractDataBuffer.class
@@ -431,6 +445,7 @@ javax/annotation/WillClose.class
 javax/annotation/Nonnegative.class
 javax/annotation/Detainted.class
 roboguice/activity/RoboLauncherActivity.class
+android/databinding/BindingBuildInfo.class
 javax/annotation/meta/TypeQualifier.class
 android/support/v4/view/VelocityTrackerCompat.class
 android/support/v4/media/VolumeProviderCompat$1.class

@@ -286,10 +286,14 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <item name="dataBinding" type="id"/>
     <item name="home" type="id"/>
+    <item name="onAttachStateChangeListener" type="id"/>
+    <item name="onDateChanged" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
+    <item name="textWatcher" type="id"/>
     <item name="up" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
@@ -345,7 +349,7 @@
     <string name="checkout_textview_miles">End Miles    </string>
     <string name="checkout_textview_name">Vehicle Name </string>
     <string name="checkout_textview_title">Check Out Scroll To bottom  </string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">3c363365-e1b7-4898-9c44-e1ac372a25f5</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">06820199-105e-4647-9954-da701480ab07</string>
     <string name="common_google_play_services_api_unavailable_text"><ns2:g id="app_name">%1$s</ns2:g> requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>
@@ -383,7 +387,7 @@
     <string name="edittext_txt_hint_pwd">Password</string>
     <string name="edittext_txt_hint_rememberme">Remember Me</string>
     <string name="edittext_txt_hint_user">Username</string>
-    <string name="error_internet">Please check your internet connection</string>
+    <string name="error_internet">Please check your internet connection.</string>
     <string name="error_server">Server error please try again later.</string>
     <string name="force_login">You are not logged in! Please login and try again</string>
     <string name="header_sub_text_1">LineHaul</string>
@@ -413,7 +417,7 @@
     <string name="multiscan_targascan_errormsg_to">Please enter to</string>
     <string name="multiscan_targascan_title">LineHaul Pro</string>
     <string name="not_match">Chg1 and Chg2 must be different.</string>
-    <string name="offline_checkout">Internet connection is not available.You can not check out in offline mode</string>
+    <string name="offline_checkout">Internet connection is not available.You can not check out in offline mode.</string>
     <string name="offline_login">Internet connection is not available. Do you want to continue with offline mode?</string>
     <string name="ok">Ok</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
@@ -452,6 +456,7 @@
     <string name="textview_scan_setting">Scan Setting</string>
     <string name="textview_scanninghelp">Scanning Help</string>
     <string name="textview_scansettings">Scan Settings</string>
+    <string name="textview_search">Search</string>
     <string name="textview_switchtorouteapp">Route App</string>
     <string name="textview_txt_title">Please enter your details</string>
     <string name="title_activity_cached_job">CachedJobActivity</string>

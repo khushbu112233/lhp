@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+
+    <TextView
+        android:id="@+id/searchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Search for carton number or work order number"
+        android:textColor="#232323"
+        android:textSize="@dimen/form_text_size" />
+
+    <EditText
+        android:id="@+id/search_cartun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#656565"
+        android:textSize="@dimen/form_text_size"
+        android:textColorHint="#b1abab"
+        android:hint="Enter Carton Number or Work Order Number"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/btnSearchNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/checkout_margin_left_btn"
+        android:layout_marginRight="@dimen/login_margin_left"
+        android:layout_marginTop="@dimen/changepwd_margin_left"
+        android:background="@drawable/btn_login"
+        android:text="Search now"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+    <ListView
+        android:id="@+id/list_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:divider="@null"
+        android:dividerHeight="15dp"
+        android:scrollbars="vertical"
+        android:visibility="visible" />
+</LinearLayout>

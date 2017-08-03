@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/change_pwd_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/changepwdimg_margin_top"
+            android:gravity="center"
+            android:text="Carton Details"
+            android:textColor="#174a85"
+            android:textStyle="bold"
+            android:textSize="23sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_warning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="More than one of this $carton_num and $co_type where found only one is being displayed, please see a manager regarding this problem."
+                    android:textColor="#ff0000"
+                    android:visibility="gone"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+
+                <ImageView
+                    android:id="@+id/imgproduct"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Company Details"
+                    android:textColor="#174a85"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/txt_client_id1"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.50"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Company Name:"
+                            android:textStyle="bold"
+                            android:textColor="#174a85"
+                            android:textSize="15dp"/>
+                        <TextView
+                            android:id="@+id/txt_client_id"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.50"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="#174a85"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txt_Order1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.50"
+                            android:padding="5dp"
+                            android:text="Work order No:"
+                            android:textColor="#174a85"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_Order"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.50"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="#174a85"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txt_carton1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.50"
+                            android:padding="5dp"
+                            android:text="Carton No:"
+                            android:textColor="#174a85"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_carton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.50"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="#174a85"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_Pickup_and_deliver_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Pickup &amp; Delivery Details"
+                    android:textColor="#174a85"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_delivered_on1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Delivered on:"
+                                android:textStyle="bold"
+                                android:textColor="#174a85"
+                                android:textSize="16dp" />
+                            <TextView
+                                android:id="@+id/txt_delivered_on"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_deliver_by_driver_id1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Delivered by driverID:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_deliver_by_driver_id"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_pup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_pick_up_name1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Pickup Name:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/txt_pick_up_name"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_pick_up_address1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Pickup Address:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_pick_up_address"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_pickup_city1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Pickup City:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_pickup_city"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_pick_zip1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Pickup Zip"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_pick_zip"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_deliver_to_name1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Delivered to Name:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_deliver_to_name"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_deliver_to_address1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Delivered to Address:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_deliver_to_address"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_deliver_to_city1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Delivered to City:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_deliver_to_city"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_deliver_to_zip_code1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Delivered to Zip code:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_deliver_to_zip_code"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_quantity1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Quantity:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_quantity"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_weight1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Weight:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_weight"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+                            <TextView
+                                android:id="@+id/txt_status_of_deliver1"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Status of delivery:"
+                                android:textColor="#174a85"
+                                android:textSize="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_status_of_deliver"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textColor="#174a85"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txt_pickup_between"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#174a85"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:visibility="visible" />
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#174a85"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

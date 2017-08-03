@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/list_item_layout.xml",
+        "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/layout/list_item_layout.xml"
+    },
+    {
         "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/abc_expanded_menu_layout.xml",
         "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/layout/abc_expanded_menu_layout.xml"
     },
@@ -96,8 +100,16 @@
         "source": "/home/aipxperts-ubuntu-01/.android/build-cache/67b3ae5e59e2b73fc54d46f048a633ec82455e2c/output/res/layout/place_autocomplete_item_prediction.xml"
     },
     {
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/cotype_detail_dialog_layout.xml",
+        "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/layout/cotype_detail_dialog_layout.xml"
+    },
+    {
         "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/activity_preferences.xml",
         "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/layout/activity_preferences.xml"
+    },
+    {
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/order_list_display_layout.xml",
+        "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/layout/order_list_display_layout.xml"
     },
     {
         "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/abc_list_menu_item_layout.xml",
@@ -274,6 +286,10 @@
     {
         "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/abc_action_menu_item_layout.xml",
         "source": "/home/aipxperts-ubuntu-01/.android/build-cache/acb8185603d3c92cfe2ef72b08b98decaa06fb8f/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/product_detail_layout.xml",
+        "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/layout/product_detail_layout.xml"
     },
     {
         "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/layout/abc_list_menu_item_icon.xml",

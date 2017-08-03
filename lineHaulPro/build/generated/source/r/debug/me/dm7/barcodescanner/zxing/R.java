@@ -13,14 +13,14 @@ public final class R {
         public static final int viewfinder_mask = 0x7f0c005b;
     }
     public static final class id {
-        public static final int camera_preview = 0x7f0d00ce;
-        public static final int view_finder_view = 0x7f0d00cf;
+        public static final int camera_preview = 0x7f0d00db;
+        public static final int view_finder_view = 0x7f0d00dc;
     }
     public static final class integer {
         public static final int viewfinder_border_length = 0x7f080008;
         public static final int viewfinder_border_width = 0x7f080009;
     }
     public static final class layout {
-        public static final int merge_camera_preview_view_finder = 0x7f030031;
+        public static final int merge_camera_preview_view_finder = 0x7f030033;
     }
 }

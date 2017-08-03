@@ -124,6 +124,10 @@
         "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/drawable/layout_bg_blue.xml"
     },
     {
+        "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/drawable/search_dashboard_border.xml",
+        "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/drawable/search_dashboard_border.xml"
+    },
+    {
         "merged": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/res/merged/release/drawable/spinner_8.png",
         "source": "/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/src/main/res/drawable/spinner_8.png"
     },
