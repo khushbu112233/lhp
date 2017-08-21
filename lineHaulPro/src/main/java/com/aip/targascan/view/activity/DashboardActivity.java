@@ -948,9 +948,15 @@ public class DashboardActivity extends RoboActivity {
                         {
                             if(productDetailArrayList.size()==1)
                             {
-                                String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+productDetailArrayList.get(0).getCarton_num1()+"&co_type="+productDetailArrayList.get(0).getCo_type1();
-                                Pref.setValue(DashboardActivity.this,"Detail_url",url);
+                                if(Pref.getValue(DashboardActivity.this,"weburlname","").equalsIgnoreCase("YCOL")) {
+                                    String url = "https://yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+                                    Pref.setValue(DashboardActivity.this, "Detail_url", url);
+                                }else if(Pref.getValue(DashboardActivity.this,"weburlname","").equalsIgnoreCase("CTS"))
+                                {
+                                    String url = "http://cargotracking.solutions/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+                                    Pref.setValue(DashboardActivity.this, "Detail_url", url);
 
+                                }
                                 Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                                 Bundle bundle = new Bundle();
                                 bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -983,9 +989,15 @@ public class DashboardActivity extends RoboActivity {
                                     dialog(products);
                                 }else
                                 {
-                                    String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+productDetailArrayList.get(0).getCarton_num1()+"&co_type="+productDetailArrayList.get(0).getCo_type1();
-                                    Pref.setValue(DashboardActivity.this,"Detail_url",url);
+                                    if(Pref.getValue(DashboardActivity.this,"weburlname","").equalsIgnoreCase("YCOL")) {
+                                        String url = "https://yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+                                        Pref.setValue(DashboardActivity.this, "Detail_url", url);
+                                    }else if(Pref.getValue(DashboardActivity.this,"weburlname","").equalsIgnoreCase("CTS"))
+                                    {
+                                        String url = "http://cargotracking.solutions/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+                                        Pref.setValue(DashboardActivity.this, "Detail_url", url);
 
+                                    }
                                     Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                                     Bundle bundle = new Bundle();
                                     bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -1507,9 +1519,15 @@ public class DashboardActivity extends RoboActivity {
 
                     }
                 }
-                String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+search_cartun.getText().toString()+"&co_type="+productDetailArrayList1.get(0).getCo_type1();
-                Pref.setValue(DashboardActivity.this,"Detail_url",url);
+                if(Pref.getValue(DashboardActivity.this,"weburlname","").equalsIgnoreCase("YCOL")) {
+                    String url = "https://yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList1.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList1.get(0).getCo_type1();
+                    Pref.setValue(DashboardActivity.this, "Detail_url", url);
+                }else if(Pref.getValue(DashboardActivity.this,"weburlname","").equalsIgnoreCase("CTS"))
+                {
+                    String url = "http://cargotracking.solutions/search_script/search_app.php?cn=" + productDetailArrayList1.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList1.get(0).getCo_type1();
+                    Pref.setValue(DashboardActivity.this, "Detail_url", url);
 
+                }
                 Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList1);

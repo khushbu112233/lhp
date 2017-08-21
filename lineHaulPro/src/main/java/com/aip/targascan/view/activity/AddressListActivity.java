@@ -319,10 +319,10 @@ public class AddressListActivity extends Activity {
 										GpsEnable = true;
 									}
 								}).setNegativeButton("No", new DialogInterface.OnClickListener() {
-									public void onClick(final DialogInterface dialog, final int id) {
-										dialog.cancel();
-									}
-								});
+							public void onClick(final DialogInterface dialog, final int id) {
+								dialog.cancel();
+							}
+						});
 						final AlertDialog alert = builder.create();
 						alert.show();
 					} else {
@@ -361,7 +361,7 @@ public class AddressListActivity extends Activity {
 		Geocoder geoCoder = new Geocoder(this, Locale.getDefault());
 
 		Log.e("Address", "" + address);
-		
+
 		try {
 			List<Address> addresses = geoCoder.getFromLocationName(address, 1);
 			if (addresses.size() > 0) {
@@ -370,9 +370,9 @@ public class AddressListActivity extends Activity {
 				lng = addresses.get(0).getLongitude();
 
 			}
-			
+
 			Log.e("Geocoder Value: ", "lat: " + lat + "lng: " + lng);
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -680,8 +680,15 @@ public class AddressListActivity extends Activity {
 						{
 							if(productDetailArrayList.size()==1)
 							{
-								String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+str+"&co_type="+productDetailArrayList.get(0).getCo_type1();
-								Pref.setValue(AddressListActivity.this,"Detail_url",url);
+								if(Pref.getValue(AddressListActivity.this,"weburlname","").equalsIgnoreCase("YCOL")) {
+									String url = "https://yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+									Pref.setValue(AddressListActivity.this, "Detail_url", url);
+								}else if(Pref.getValue(AddressListActivity.this,"weburlname","").equalsIgnoreCase("CTS"))
+								{
+									String url = "http://cargotracking.solutions/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+									Pref.setValue(AddressListActivity.this, "Detail_url", url);
+
+								}
 								Intent intent =new Intent(AddressListActivity.this,ProductDetailActivity.class);
 								Bundle bundle = new Bundle();
 								bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -714,9 +721,15 @@ public class AddressListActivity extends Activity {
 									dialog(products,str);
 								}else
 								{
-									String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+str+"&co_type="+productDetailArrayList.get(0).getCo_type1();
-									Pref.setValue(AddressListActivity.this,"Detail_url",url);
+									if(Pref.getValue(AddressListActivity.this,"weburlname","").equalsIgnoreCase("YCOL")) {
+										String url = "https://yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+										Pref.setValue(AddressListActivity.this, "Detail_url", url);
+									}else if(Pref.getValue(AddressListActivity.this,"weburlname","").equalsIgnoreCase("CTS"))
+									{
+										String url = "http://cargotracking.solutions/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+										Pref.setValue(AddressListActivity.this, "Detail_url", url);
 
+									}
 									Intent intent =new Intent(AddressListActivity.this,ProductDetailActivity.class);
 									Bundle bundle = new Bundle();
 									bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -774,9 +787,15 @@ public class AddressListActivity extends Activity {
 
 					}
 				}
-				String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+str+"&co_type="+productDetailArrayList1.get(0).getCo_type1();
-				Pref.setValue(AddressListActivity.this,"Detail_url",url);
+				if(Pref.getValue(AddressListActivity.this,"weburlname","").equalsIgnoreCase("YCOL")) {
+					String url = "https://yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList1.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList1.get(0).getCo_type1();
+					Pref.setValue(AddressListActivity.this, "Detail_url", url);
+				}else if(Pref.getValue(AddressListActivity.this,"weburlname","").equalsIgnoreCase("CTS"))
+				{
+					String url = "http://cargotracking.solutions/search_script/search_app.php?cn=" + productDetailArrayList1.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList1.get(0).getCo_type1();
+					Pref.setValue(AddressListActivity.this, "Detail_url", url);
 
+				}
 				Intent intent =new Intent(AddressListActivity.this,ProductDetailActivity.class);
 				Bundle bundle = new Bundle();
 				bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList1);

@@ -466,7 +466,7 @@ public class LoginActivity extends RoboActivity {
             // https://www.
             SharedPrefrenceUtil.setPrefrence(activity, Constants.PREF_SELECTED_URL_NAME, webUrlName);
             spinUrls.setText(webUrlName);
-
+            Pref.setValue(LoginActivity.this,"weburlname",webUrlName);
             String url = getUrl(webUrlName);
             SharedPrefrenceUtil.setPrefrence(activity, Constants.PREF_SELECTED_URL, url);
             Logger.debug(Constants.DEBUG, "LoginActivity :: setUrl() :: setUrl=" + url + " :: name=" + webUrlName);
