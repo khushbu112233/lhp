@@ -167,10 +167,8 @@ public class DashboardActivity extends RoboActivity {
     private boolean isNewVersionAvailable = false;
     private AlertDialog UpdateDialog;
     boolean isDuplicate=false;
-
     ArrayList<ProductDetail> productDetailArrayList1 = new ArrayList<ProductDetail>();
     public ArrayList<ProductDetail> productDetailArrayList=new ArrayList<>();
-
     ArrayList<String> products = new ArrayList<String>();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -747,6 +745,7 @@ public class DashboardActivity extends RoboActivity {
                     return;
                 }
                 String str = result.toString();
+               // Log.e("result",""+str);
                 JSONObject json;
                 try {
                     json = new JSONObject(str);
@@ -934,7 +933,14 @@ public class DashboardActivity extends RoboActivity {
                                 productDetails[i].setDestination("");
                             }
 
+                            if(!jsonArray_data.getJSONObject(i).getString("sig_string").equalsIgnoreCase("null"))
+                            {
+                                productDetails[i].setSig_string(jsonArray_data.getJSONObject(i).getString("sig_string"));
 
+                            }else
+                            {
+                                productDetails[i].setSig_string("");
+                            }
                             productDetailArrayList.add(productDetails[i]);
                         }
 //                                            Log.e("#detail RESPONSE#",""+productDetailArrayList.get(0).getCarton_num1());
@@ -942,6 +948,8 @@ public class DashboardActivity extends RoboActivity {
                         {
                             if(productDetailArrayList.size()==1)
                             {
+                                String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+productDetailArrayList.get(0).getCarton_num1()+"&co_type="+productDetailArrayList.get(0).getCo_type1();
+                                Pref.setValue(DashboardActivity.this,"Detail_url",url);
 
                                 Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                                 Bundle bundle = new Bundle();
@@ -975,6 +983,9 @@ public class DashboardActivity extends RoboActivity {
                                     dialog(products);
                                 }else
                                 {
+                                    String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+productDetailArrayList.get(0).getCarton_num1()+"&co_type="+productDetailArrayList.get(0).getCo_type1();
+                                    Pref.setValue(DashboardActivity.this,"Detail_url",url);
+
                                     Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                                     Bundle bundle = new Bundle();
                                     bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -1493,8 +1504,12 @@ public class DashboardActivity extends RoboActivity {
                     if(j==i)
                     {
                         productDetailArrayList1.add(productDetailArrayList.get(j));
+
                     }
                 }
+                String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn="+search_cartun.getText().toString()+"&co_type="+productDetailArrayList1.get(0).getCo_type1();
+                Pref.setValue(DashboardActivity.this,"Detail_url",url);
+
                 Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList1);

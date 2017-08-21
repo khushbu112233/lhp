@@ -34,6 +34,7 @@ public class ProductDetail implements Parcelable{
     String city;
     String pickup;
     String destination;
+    String sig_string;
 
     public ProductDetail(Parcel in) {
         date = in.readString();
@@ -62,6 +63,7 @@ public class ProductDetail implements Parcelable{
         city = in.readString();
         pickup = in.readString();
         destination = in.readString();
+        sig_string = in.readString();
     }
 
     public static final Creator<ProductDetail> CREATOR = new Creator<ProductDetail>() {
@@ -78,6 +80,14 @@ public class ProductDetail implements Parcelable{
 
     public ProductDetail() {
 
+    }
+
+    public String getSig_string() {
+        return sig_string;
+    }
+
+    public void setSig_string(String sig_string) {
+        this.sig_string = sig_string;
     }
 
     public String getDate() {
@@ -323,5 +333,6 @@ public class ProductDetail implements Parcelable{
         parcel.writeString(city);
         parcel.writeString(pickup);
         parcel.writeString(destination);
+        parcel.writeString(sig_string);
     }
 }

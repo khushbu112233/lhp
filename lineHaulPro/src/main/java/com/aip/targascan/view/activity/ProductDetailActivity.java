@@ -2,13 +2,17 @@ package com.aip.targascan.view.activity;
 
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 
 import com.aip.targascan.R;
 import com.aip.targascan.common.util.Pref;
 import com.aip.targascan.databinding.ProductDetailLayoutBinding;
+import com.aip.targascan.databinding.ProductDetailNewLayoutBinding;
 import com.aip.targascan.model.ProductDetail;
 import com.squareup.picasso.Picasso;
 
@@ -22,19 +26,15 @@ import static com.aip.targascan.view.activity.OrderListDisplayActivity.products;
 
 public class ProductDetailActivity extends Activity{
     ProductDetailLayoutBinding mBinding;
+    ProductDetailNewLayoutBinding binding;
     public ArrayList<ProductDetail> productDetailArrayList=new ArrayList<>();
     String warning="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mBinding = DataBindingUtil.setContentView(this, R.layout.product_detail_layout);
-        //  mBinding.productName.setText(products.get(Pref.getValue(ProductDetailActivity.this,"position",0)));
+        binding = DataBindingUtil.setContentView(this, R.layout.product_detail_new_layout);
 
-        // ArrayList<ProductDetail> filelist =  (ArrayList<ProductDetail>)getIntent().getSerializableExtra("productDetailArrayList");
-
-
-        // Log.e("filelist",""+filelist);
 
         Bundle data = getIntent().getExtras();
         if(data!=null) {
@@ -42,6 +42,33 @@ public class ProductDetailActivity extends Activity{
             productDetailArrayList = data.getParcelableArrayList("productDetailArrayList");
             warning = data.getString("warning");
             Log.e("filelist",""+productDetailArrayList);
+        }
+        binding.webview.loadUrl(Pref.getValue(ProductDetailActivity.this,"Detail_url",""));
+        binding.webview.getSettings().setJavaScriptEnabled(true);
+        binding.txtCartoonNum.setText(productDetailArrayList.get(0).getCarton_num1());
+        binding.imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        /**
+         * old code without webview
+         */
+       /* Bundle data = getIntent().getExtras();
+        if(data!=null) {
+
+            productDetailArrayList = data.getParcelableArrayList("productDetailArrayList");
+            warning = data.getString("warning");
+            Log.e("filelist",""+productDetailArrayList);
+        }
+           if(warning.equalsIgnoreCase("1"))
+        {
+            mBinding.txtWarning.setVisibility(View.VISIBLE);
+            mBinding.txtWarning.setText("More than one carton number "+productDetailArrayList.get(0).getCarton_num1()+" found for co type "+productDetailArrayList.get(0).getCo_type1()+" .Please contact manager regarding this problem.");
+        }else
+        {
+            mBinding.txtWarning.setVisibility(View.GONE);
         }
         String url = "https://yourcargoonline.com/"+productDetailArrayList.get(0).getCo_type1()+".jpg";
         Picasso.with(this).load(url).into(mBinding.imgproduct);
@@ -77,6 +104,13 @@ public class ProductDetailActivity extends Activity{
         mBinding.txtWeight.setText(productDetailArrayList.get(0).getWeight());
         mBinding.txtStatusOfDeliver.setText(productDetailArrayList.get(0).getRedeliver1());
         mBinding.txtPickupBetween.setText(productDetailArrayList.get(0).getComment());
-
+        if(!productDetailArrayList.get(0).getSig_string().equalsIgnoreCase("")) {
+            byte[] decodedString = Base64.decode(productDetailArrayList.get(0).getSig_string(), Base64.DEFAULT);
+            Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+            mBinding.imgSign.setImageBitmap(decodedByte);
+        }else
+        {
+            mBinding.imgSign.setVisibility(View.GONE);
+        }*/
     }
 }

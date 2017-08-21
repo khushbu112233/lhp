@@ -535,6 +535,16 @@
                         android:layout_height="1dp"
                         android:layout_marginBottom="20dp"
                         android:background="#174a85"/>
+
+                    <ImageView
+                        android:id="@+id/imgSign"
+                        android:layout_width="200dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher" />
                 </LinearLayout>
 
             </LinearLayout>
