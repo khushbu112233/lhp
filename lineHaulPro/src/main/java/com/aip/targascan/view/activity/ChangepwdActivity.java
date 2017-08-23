@@ -1,5 +1,6 @@
 package com.aip.targascan.view.activity;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -145,7 +146,7 @@ public class ChangepwdActivity extends RoboActivity {
 							if(responseJson.has("message"))
 							{
 								response = responseJson.getString("message");
-								Log.d("#Change password message#", response);
+								Log.d("#Change password #", response);
 							}
 						}
 
@@ -170,7 +171,20 @@ public class ChangepwdActivity extends RoboActivity {
 						}
 					} catch (JSONException e) {
 						e.printStackTrace();
-						L.alert(activity, "Server error! Server response is "+result);
+						try {
+							JSONObject jsonObject = new JSONObject(str);
+							JSONArray jsonArray = jsonObject.getJSONArray("errors");
+							for (int counter = 0; counter < jsonArray.length(); counter++) {
+
+								JSONObject obj = jsonArray.getJSONObject(counter);
+								L.alert(activity,""+obj.getString("message"));
+
+							}
+
+						} catch (JSONException e1) {
+							e1.printStackTrace();
+						}
+
 					}
 				}
 

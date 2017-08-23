@@ -53,6 +53,7 @@ import com.aip.targascan.common.async.CompanyRejectionListAsync;
 import com.aip.targascan.common.async.DriverRouteSubmitAsync;
 import com.aip.targascan.common.async.DriverRouteSubmitBackgroundAsync;
 import com.aip.targascan.common.async.ExportDataAsync;
+import com.aip.targascan.common.async.GetAddressListAsync;
 import com.aip.targascan.common.async.GetDailyOrdersListAsync;
 import com.aip.targascan.common.async.GetProductDetailAsync;
 import com.aip.targascan.common.async.IResultListner;
@@ -319,12 +320,46 @@ public class DashboardActivity extends RoboActivity {
 
             @Override
             public void onClick(View v) {
-                try {
-                    Intent i = new Intent(activity, AddressListActivity.class);
-                    activity.startActivity(i);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+
+                GetAddressListAsync async = new GetAddressListAsync(DashboardActivity.this, true, new ICallback() {
+
+                    @Override
+                    public void run(Object result) {
+
+                        // try{
+                        //
+                        // JsonObject jsonObject = (JsonObject) result;
+                        //
+                        // Log.d("", "" + jsonObject.toString(4));
+                        //
+                        // }catch(Exception e){
+                        // e.printStackTrace();
+                        // }
+
+                        try {
+                            JSONObject jsonObject = new JSONObject(result.toString());
+                            Log.e("Addresses", "Addresses \n" + jsonObject.toString(4));
+
+                            if (jsonObject.getString("code").equals("200")) {
+                                try {
+                                    Intent i = new Intent(activity, AddressListActivity.class);
+                                    activity.startActivity(i);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }else if(jsonObject.getString("code").equals("201")){
+                                L.alert(DashboardActivity.this, jsonObject.getString("message"));
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                });
+
+                async.execute();
+
 
 
             }
@@ -745,7 +780,7 @@ public class DashboardActivity extends RoboActivity {
                     return;
                 }
                 String str = result.toString();
-               // Log.e("result",""+str);
+                // Log.e("result",""+str);
                 JSONObject json;
                 try {
                     json = new JSONObject(str);
@@ -957,6 +992,10 @@ public class DashboardActivity extends RoboActivity {
                                     Pref.setValue(DashboardActivity.this, "Detail_url", url);
 
                                 }
+                              /*  String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+                                Pref.setValue(DashboardActivity.this, "Detail_url", url);
+*/
+
                                 Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                                 Bundle bundle = new Bundle();
                                 bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -998,6 +1037,11 @@ public class DashboardActivity extends RoboActivity {
                                         Pref.setValue(DashboardActivity.this, "Detail_url", url);
 
                                     }
+/*
+                                    String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+                                    Pref.setValue(DashboardActivity.this, "Detail_url", url);
+*/
+
                                     Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                                     Bundle bundle = new Bundle();
                                     bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -1528,6 +1572,10 @@ public class DashboardActivity extends RoboActivity {
                     Pref.setValue(DashboardActivity.this, "Detail_url", url);
 
                 }
+
+               /* String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList1.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList1.get(0).getCo_type1();
+                Pref.setValue(DashboardActivity.this, "Detail_url", url);
+*/
                 Intent intent =new Intent(DashboardActivity.this,ProductDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList1);

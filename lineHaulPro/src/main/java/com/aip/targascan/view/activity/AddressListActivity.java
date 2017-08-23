@@ -63,6 +63,7 @@ public class AddressListActivity extends Activity {
 	ArrayList<String> products = new ArrayList<String>();
 	ArrayList<ProductDetail> productDetailArrayList1 = new ArrayList<ProductDetail>();
 	public ArrayList<ProductDetail> productDetailArrayList=new ArrayList<>();
+	ImageView img_info;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -70,13 +71,19 @@ public class AddressListActivity extends Activity {
 
 		mListView = (ListView) findViewById(R.id.lst);
 		swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
+		img_info = (ImageView)findViewById(R.id.img_info);
 
 		AddressList = new ArrayList<String>();
 		OrderList = new ArrayList<String>();
 		CartunList = new ArrayList<String>();
 		// datas = new ArrayList<ServerData>();
 		// serverData = new ServerData();
-
+		img_info.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				L.alert(AddressListActivity.this,"Tap carton number for order information or tap the address for navigation information.");
+			}
+		});
 		GetAddressListAsync async = new GetAddressListAsync(AddressListActivity.this, true, new ICallback() {
 
 			@Override
@@ -156,6 +163,8 @@ public class AddressListActivity extends Activity {
 							}
 
 						}
+					}else if(jsonObject.getString("code").equals("201")){
+						L.alert(AddressListActivity.this, jsonObject.getString("message"));
 					}
 
 					Log.d("WorkOrderList", "WorkOrderList \n" + OrderList.toString());
@@ -270,6 +279,8 @@ public class AddressListActivity extends Activity {
 									}
 
 								}
+							}else if(jsonObject.getString("code").equals("201")){
+								L.alert(AddressListActivity.this, jsonObject.getString("message"));
 							}
 
 							Log.d("WorkOrderList", "WorkOrderList \n" + OrderList.toString());
@@ -689,6 +700,10 @@ public class AddressListActivity extends Activity {
 									Pref.setValue(AddressListActivity.this, "Detail_url", url);
 
 								}
+								/*String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+								Pref.setValue(AddressListActivity.this, "Detail_url", url);
+*/
+
 								Intent intent =new Intent(AddressListActivity.this,ProductDetailActivity.class);
 								Bundle bundle = new Bundle();
 								bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -730,6 +745,10 @@ public class AddressListActivity extends Activity {
 										Pref.setValue(AddressListActivity.this, "Detail_url", url);
 
 									}
+
+									/*String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList.get(0).getCo_type1();
+									Pref.setValue(AddressListActivity.this, "Detail_url", url);
+*/
 									Intent intent =new Intent(AddressListActivity.this,ProductDetailActivity.class);
 									Bundle bundle = new Bundle();
 									bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList);
@@ -796,6 +815,9 @@ public class AddressListActivity extends Activity {
 					Pref.setValue(AddressListActivity.this, "Detail_url", url);
 
 				}
+				/*String url = "http://test.yourcargoonline.com/search_script/search_app.php?cn=" + productDetailArrayList1.get(0).getCarton_num1() + "&co_type=" + productDetailArrayList1.get(0).getCo_type1();
+				Pref.setValue(AddressListActivity.this, "Detail_url", url);
+*/
 				Intent intent =new Intent(AddressListActivity.this,ProductDetailActivity.class);
 				Bundle bundle = new Bundle();
 				bundle.putParcelableArrayList("productDetailArrayList", productDetailArrayList1);
