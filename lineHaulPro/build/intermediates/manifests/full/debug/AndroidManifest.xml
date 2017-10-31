@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aip.targascan"
-    android:versionCode="25"
-    android:versionName="3.5" >
+    android:versionCode="26"
+    android:versionName="3.6" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -74,105 +74,149 @@
         </activity>
         <activity
             android:name="com.aip.targascan.view.activity.CachedjobsActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.SettingActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.ChangepwdActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.aip.targascan.view.activity.checkManagerPasswordActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.ScanSettingsActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.LineHaulActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.DriverdetailActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.ExitActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.GroupphotoActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.CheckInActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.PreferencesActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.ScanninghelpActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.ScansettingsActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.Switchorouteapp"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.DashboardActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.aip.targascan.view.activity.MultiScanInner"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.Preferences"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="com.aip.targascan.view.activity.LoginActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.CheckoutActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.PreferenceActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
 
         <service android:name="com.aip.targascan.service.DataLoaderService" />
 
         <activity
             android:name="com.aip.targascan.CachedJobActivity"
-            android:label="@string/title_activity_cached_job" />
+            android:configChanges="keyboardHidden"
+            android:label="@string/title_activity_cached_job"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.SignatureActivity"
             android:label="@string/app_name"
@@ -184,38 +228,51 @@
         <!-- android:screenOrientation="landscape" /> -->
         <activity
             android:name="com.aip.targascan.view.activity.CheckOutDetailActivity"
+            android:configChanges="keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.frag.SimpleScannerActivity"
+            android:configChanges="keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.AddressListActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.ReferenceActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.aip.targascan.map.MapActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.OrderListDisplayActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.aip.targascan.view.activity.ProductDetailActivity"
+            android:configChanges="keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

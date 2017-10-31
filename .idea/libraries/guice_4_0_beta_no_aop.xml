@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="guice-4.0-beta-no_aop">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lineHaulPro/libs/guice-4.0-beta-no_aop.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,19 +1,5 @@
 package com.aip.targascan.view.activity;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import org.apache.http.Header;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import roboguice.activity.RoboActivity;
-import roboguice.inject.ContentView;
-import roboguice.inject.InjectView;
-import android.R.integer;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -24,10 +10,8 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.database.Cursor;
-import android.database.DatabaseUtils;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.text.InputType;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -41,16 +25,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aip.targascan.Adapter.ListCotypeAdapter;
 import com.aip.targascan.R;
-import com.aip.targascan.common.async.ChangepasswordAsync;
 import com.aip.targascan.common.async.CompanyRejectionListAsync;
-import com.aip.targascan.common.async.DriverRouteSubmitAsync;
 import com.aip.targascan.common.async.DriverRouteSubmitBackgroundAsync;
 import com.aip.targascan.common.async.ExportDataAsync;
 import com.aip.targascan.common.async.GetAddressListAsync;
@@ -65,10 +45,9 @@ import com.aip.targascan.common.util.Constants;
 import com.aip.targascan.common.util.ICallback;
 import com.aip.targascan.common.util.JsonKey;
 import com.aip.targascan.common.util.L;
-import com.aip.targascan.common.util.Pref;
-import com.aip.targascan.common.util.WebserviceReader;
 import com.aip.targascan.common.util.L.IL;
 import com.aip.targascan.common.util.Logger;
+import com.aip.targascan.common.util.Pref;
 import com.aip.targascan.common.util.RestClient;
 import com.aip.targascan.common.util.SharedPrefrenceUtil;
 import com.aip.targascan.common.util.Util;
@@ -80,6 +59,18 @@ import com.aip.targascan.vo.DriverRouteData;
 import com.aip.targascan.vo.Login;
 import com.google.gson.Gson;
 import com.loopj.android.http.RequestParams;
+
+import org.apache.http.Header;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import roboguice.activity.RoboActivity;
+import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
 
 @ContentView(R.layout.activity_dashboard)
 public class DashboardActivity extends RoboActivity {
@@ -163,7 +154,7 @@ public class DashboardActivity extends RoboActivity {
     private DashboardActivity activity;
     private DatabaseHandler databaseHandler;
     private int count;
-
+    String FromMultiscan;
     int is_Scan_enable=0;
     private boolean isNewVersionAvailable = false;
     private AlertDialog UpdateDialog;
@@ -1162,7 +1153,7 @@ public class DashboardActivity extends RoboActivity {
 
     }
 
-    private void goCheckIn() {
+    public void goCheckIn() {
         if (Util.isNetAvailable(activity)) {
 
             String authKey = SharedPrefrenceUtil.getPrefrence(getApplicationContext(), Constants.PREF_AUTH_KEY, null);
@@ -1231,7 +1222,8 @@ public class DashboardActivity extends RoboActivity {
         activity.startActivity(i);
     }
 
-    private void callCheckIn(RequestParams params) {
+    public void callCheckIn(RequestParams params) {
+        Pref.setValue(DashboardActivity.this,"FromManagerPassword","checkin");
         RestClient.post(JsonKey.getURL_CHECK_IN(), params, new AsyncHandler(activity, true) {
 
             @Override
@@ -1275,7 +1267,7 @@ public class DashboardActivity extends RoboActivity {
                             Gson gson = new Gson();
                             CheckOutDataVO dataVO = gson.fromJson(dataJson.toString(), CheckOutDataVO.class);
                             if (dataVO.getScrollToBottom() != null && dataVO.getScrollToBottom().size() > 0) {
-                                Intent i = new Intent(activity, CheckOutDetailActivity.class);
+                                Intent i = new Intent(activity, checkManagerPasswordActivity.class);
                                 i.putExtra("title", "Check In");
                                 i.putExtra("data", dataVO);
                                 activity.startActivity(i);
@@ -1301,6 +1293,8 @@ public class DashboardActivity extends RoboActivity {
     }
 
     private void callCheckOut(RequestParams params) {
+        //SetFromMultiScan("checkout");
+        Pref.setValue(DashboardActivity.this,"FromManagerPassword","checkout");
         RestClient.post(JsonKey.getURL_CHECK_OUT(), params, new AsyncHandler(activity, true) {
 
             @Override
@@ -1318,11 +1312,12 @@ public class DashboardActivity extends RoboActivity {
                     } else if (dataJson.has("showForm") && dataJson.getString("showForm").equalsIgnoreCase("main")) {
                         doLogout();
                     } else {
+
                         // L.ok(activity, dataJson.getString("message"));
                         try {
                             Gson gson = new Gson();
                             CheckOutDataVO dataVO = gson.fromJson(dataJson.toString(), CheckOutDataVO.class);
-                            Intent i = new Intent(activity, CheckOutDetailActivity.class);
+                            Intent i = new Intent(activity, checkManagerPasswordActivity.class);
                             i.putExtra("title", "Check Out");
                             i.putExtra("data", dataVO);
                             activity.startActivity(i);
@@ -1343,7 +1338,16 @@ public class DashboardActivity extends RoboActivity {
             }
         });
     }
+    public String getFromMuliscan()
+    {
+        return FromMultiscan;
 
+    }
+    public void SetFromMultiScan(String FromMultiscan)
+    {
+        this.FromMultiscan=FromMultiscan;
+
+    }
     private boolean isRouteApp, isGroupPhotoApp;
 
     // private final String TAG = "##DashboardActivity##";

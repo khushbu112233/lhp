@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/changepwdimg_margin_top"
+                android:contentDescription="@dimen/login_margin_left"
+                android:src="@drawable/ic_launcher1" />
+
+            <TextView
+                android:id="@+id/checkPrevious_order_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/changepwdimg_margin_top"
+                android:gravity="center"
+                android:text="Manager Authentication"
+                android:textColor="#287AA9"
+                android:textSize="@dimen/checkout_textview_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dashboard_icon_bg_padding"
+                android:layout_marginRight="@dimen/dashboard_icon_bg_padding"
+                android:layout_marginTop="@dimen/dashboard_icon_bg_padding"
+                >
+                <TextView
+                    android:id="@+id/txtCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txt_message"
+                    android:layout_below="@+id/txtCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="Pending Cartons"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txt_message1"
+                    android:layout_below="@id/txt_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="Request Manager to enter passcode and bypass pending cartons."
+                    android:textColor="@android:color/black"
+                    android:visibility="visible"
+                    android:textSize="13sp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_margin_left"
+                android:layout_marginRight="@dimen/login_margin_left"
+                android:layout_marginTop="@dimen/checkout_margin_top_relativelayout" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Passcode"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@android:color/black" />
+                        <EditText
+                            android:id="@+id/edt_passcode_no"
+                            style="@style/multiscaninner_edittext_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:hint="Enter Passcode" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnByPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/login_margin_left"
+                android:layout_marginRight="@dimen/login_margin_left"
+                android:layout_marginTop="@dimen/changepwd_margin_left"
+                android:background="@drawable/btn_login"
+                android:text="@string/checkMasterPassword_textview_btn"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

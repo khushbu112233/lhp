@@ -1,21 +1,12 @@
 package com.aip.targascan.view.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import roboguice.activity.RoboActivity;
-import roboguice.inject.ContentView;
-import roboguice.inject.InjectView;
-
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -24,7 +15,6 @@ import android.widget.TextView;
 import com.aip.targascan.R;
 import com.aip.targascan.common.async.GetUrlAsync;
 import com.aip.targascan.common.async.LoginAsync;
-import com.aip.targascan.common.async.MultiScanDataAsync;
 import com.aip.targascan.common.database.DatabaseHandler;
 import com.aip.targascan.common.util.ApplicationLog;
 import com.aip.targascan.common.util.Constants;
@@ -40,6 +30,17 @@ import com.aip.targascan.common.util.Util.IOnUrlSelcted;
 import com.aip.targascan.entity.WebUrlBean;
 import com.aip.targascan.vo.Login;
 import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import roboguice.activity.RoboActivity;
+import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
 
 @ContentView(R.layout.activity_login)
 public class LoginActivity extends RoboActivity {
@@ -146,6 +147,7 @@ public class LoginActivity extends RoboActivity {
                             }
                         });
                     }
+
                 }
             }
         });

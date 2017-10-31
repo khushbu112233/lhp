@@ -118,7 +118,7 @@
         android:layout_marginRight="@dimen/login_margin_left"
         android:layout_marginTop="@dimen/changepwd_margin_left"
         android:background="@drawable/btn_login"
-        android:text="@string/checkout_textview_btn"
+        android:text="@string/checkMasterPassword_textview_btn"
         android:textColor="#ffffff"
         android:textSize="15sp" />
 

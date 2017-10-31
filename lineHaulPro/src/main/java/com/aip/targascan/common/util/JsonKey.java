@@ -21,8 +21,8 @@ public class JsonKey {
 	private static final String CHANGEPWD_URL = "changePassword";
 	private static final String CHECKOUT_URL = "checkOut";
 	private static final String URL_MULTISCAN_DATA_LOADER = "getMultiScanFormFields";
-	private static final String URL_CHECK_IN = "checkIn";
-	private static final String URL_CHECK_OUT = "checkOut";
+	private static final String URL_CHECK_IN = "checkIn2";
+	private static final String URL_CHECK_OUT = "checkOut2";
 	private static final String URL_MULTI_SCAN = "multiScan";
 	private static final String URL_MUST_SCAN_CO_TYPE = "getMustScanCoType";
 
@@ -34,6 +34,7 @@ public class JsonKey {
 	private static final String URL_CHECK_CARTON_NUMBER = "checkCartonNumbers";
 	private static final String URL_MULTI_SCAN_CO_TYPE_WITH_DOCUMENT = "multiScanCoTypeWithDocument";
 	private static final String URL_GET_CARTON_DETAILS = "getCartonDetails";
+	private static final String URL_GET_checkManagerPassword = "checkManagerPassword";
 
 	//public static final String URL_GET_DOMAINS = "http://domains.linehaulpro.com/provide_domain_names.php?passphrase=0l1oepi1o71v5";
 
@@ -153,6 +154,9 @@ public class JsonKey {
 	public static String getCARTON_DETAILS_URL() {
 		return MAIN_URL + URL_GET_CARTON_DETAILS;
 	}
+	public static String getCHECK_MANAGER_PASSWORD_URL() {
+		return MAIN_URL + URL_GET_checkManagerPassword;
+	}
 	public static final String KEY_DRIVER_ID = "driverId";
 	public static final String KEY_USERNAME = "username";
 	public static final String KEY_PASSWORD = "password";
@@ -178,6 +182,8 @@ public class JsonKey {
 	public static final String KEY_RECORDDATE = "recordDate";
 	public static final String KEY_AUTHKEY = "authKey";
 	public static final String KEY_CARTON_NUMBERS = "carton_numbers";
+
+	public static final String KEY_MASTER_PASSWORD = "masterPassword";
 
 	// CheckIn parameters
 	public interface CheckIn {

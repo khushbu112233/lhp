@@ -84,6 +84,8 @@
     <string name="login_final">Entered successfully</string>
     <string name="not_match">Chg1 and Chg2 must be different.</string>
 
+
+    <string name="checkMasterPassword_textview_btn">Submit</string>
     <string-array name="country_arrays">
         <item>Malaysia</item>
         <item>United States</item>

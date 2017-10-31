@@ -21,15 +21,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_611075093a8aa6127d281dce850ea871fb46b027/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/libs/roboguice-2.0.jar"
         jumboMode="true"
         optimize="true"
@@ -66,21 +57,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="713cf1494210eb67bf386818e37f27af2cfa1fa2">
-        <dex dex="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8b1c68b2694f44337150211e0575fab90b7e429c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/libs/httpmime-4.1.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
         <dex dex="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/2/httpmime-4.1.2_728b1fab25867bceaf5593c8cdc3867c2beae066/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/zxingLibrary/build/intermediates/bundles/default/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f1b4736e2e933d03cec1b8fe48618cf53cf178b">
+        <dex dex="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/4/classes_cc237acb4ea5d76947e52b2bea8ba36adfeb4976/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/scanlibrary/build/intermediates/bundles/default/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="262a3b3370f45db1fa0d3c4bab976fffcb3bc24b">
+        <dex dex="/home/aipxperts-ubuntu-01/Khushbu/LHP 22-5-17/linehaulpro-android/lineHaulPro/build/intermediates/transforms/dex/debug/folders/1000/4/classes_73879cb17cb84eb7dd1815121030513292b7ebde/classes.dex" />
     </item>
 
 </items>

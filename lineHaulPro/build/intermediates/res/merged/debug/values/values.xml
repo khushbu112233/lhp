@@ -31,6 +31,7 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="black">#000000</color>
     <color name="blue">#ff59a9ff</color>
     <color name="bottom_background_color">#ffc4c2bc</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
@@ -344,12 +345,13 @@
     <string name="cachedjob_btn_text_retransmit">Retransmit</string>
     <string name="cachedjob_textview_text">Number of cached job : %s</string>
     <string name="cantCrop">Cant crop the image, change the points</string>
+    <string name="checkMasterPassword_textview_btn">Submit</string>
     <string name="checkin_textview_title">Check In Scroll to bottom  </string>
     <string name="checkout_textview_btn">Save Details</string>
     <string name="checkout_textview_miles">End Miles    </string>
     <string name="checkout_textview_name">Vehicle Name </string>
     <string name="checkout_textview_title">Check Out Scroll To bottom  </string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">d4cf951d-2aca-4898-a102-c1cdfde57d1b</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">e22f90ae-6ec2-4e9c-b05d-beb7ed1b4ae5</string>
     <string name="common_google_play_services_api_unavailable_text"><ns2:g id="app_name">%1$s</ns2:g> requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>

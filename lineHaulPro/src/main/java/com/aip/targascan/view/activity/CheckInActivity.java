@@ -2,12 +2,6 @@ package com.aip.targascan.view.activity;
 
 
 
-import org.apache.http.Header;
-import org.json.JSONObject;
-
-import roboguice.activity.RoboActivity;
-import roboguice.inject.ContentView;
-import roboguice.inject.InjectView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +21,13 @@ import com.aip.targascan.common.util.SharedPrefrenceUtil;
 import com.aip.targascan.common.util.Util;
 import com.aip.targascan.vo.Login;
 import com.loopj.android.http.RequestParams;
+
+import org.apache.http.Header;
+import org.json.JSONObject;
+
+import roboguice.activity.RoboActivity;
+import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
 @ContentView(R.layout.activity_multiscan)
 public class CheckInActivity extends RoboActivity{
 	@InjectView(R.id.edtstartmilescheckin) 			EditText editstartmiles;
@@ -49,16 +50,16 @@ public class CheckInActivity extends RoboActivity{
 				{
 					goCheckIn();
 				}
-			}	
+			}
 		});
 	}
-	
+
 	private boolean isValidate(){
 		if (Util.isEmpty(editstartmiles) && Util.isEmpty(editvehiclename)) {
 
 			L.alert(activity, Constants.APP_NAME, getResources().getText(R.string.validate_required_field).toString());
 			return false;
-			
+
 		} else if (Util.isEmpty(editvehiclename)) {
 
 			L.alert(activity, Constants.APP_NAME, getResources().getText(R.string.validate_vehiclename).toString());
@@ -68,11 +69,11 @@ public class CheckInActivity extends RoboActivity{
 
 			L.alert(activity, Constants.APP_NAME, getResources().getText(R.string.validate_startmile).toString());
 			return false;
-		} 
+		}
 
 		return true;
 	}
-	
+
 	private void goCheckIn(){
 		if(Util.isNetAvailable(activity))
 		{
@@ -87,9 +88,9 @@ public class CheckInActivity extends RoboActivity{
 				params.add(JsonKey.CheckIn.vehicleName, editvehiclename.getText().toString().trim());
 				params.add(JsonKey.CheckIn.startMiles, editstartmiles.getText().toString().trim());
 				params.add(JsonKey.CheckIn.checkIn, "N");
-				
+
 				callCheckIn(params);
-				
+
 			}else
 				goInnerJob();
 		}else{
@@ -97,7 +98,7 @@ public class CheckInActivity extends RoboActivity{
 		}
 
 	}
-	
+
 	private void callCheckIn(RequestParams params){
 		RestClient.post(JsonKey.getURL_CHECK_IN(), params, new AsyncHandler(activity, true) {
 
@@ -107,19 +108,22 @@ public class CheckInActivity extends RoboActivity{
 					Logger.info("#CHECKIN:CHECKIN#", response.toString());
 					JSONObject responseJson = response.getJSONObject("response");
 					JSONObject dataJson = responseJson.getJSONObject("data");
-					
+
 					if(dataJson.has("goto"))
 					{
 						String go = dataJson.getString("goto");
 						if(go != null && go.equalsIgnoreCase("scan"))
 						{
 							goInnerJob();
-							
+
 						}else{
 							activity.finish();
 						}
 					}else if(dataJson.has("showForm")){
-						goInnerJob();
+
+							goInnerJob();
+
+
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -133,9 +137,15 @@ public class CheckInActivity extends RoboActivity{
 			}
 		});
 	}
-	
+
+	private void goCheckMasterApi() {
+		Intent i = new Intent(activity, MultiScanInner.class);
+		startActivity(i);
+		activity.finish();
+	}
+
 	private void goInnerJob(){
-		Intent i = new Intent(activity, MultiScanInner.class); 
+		Intent i = new Intent(activity, MultiScanInner.class);
 		startActivity(i);
 		activity.finish();
 	}
